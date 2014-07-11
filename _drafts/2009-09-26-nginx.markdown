@@ -1,0 +1,178 @@
+---
+layout: post
+author: mrprompt
+comments: true
+date: 2009-09-26 03:30:00+00:00
+layout: post
+slug: nginx
+title: Nginx
+wordpress_id: 20
+categories:
+- apache
+- cdn
+- estático
+- linux
+- nginx
+- performance
+- php
+- proxy
+- servidores
+- web
+---
+
+**Introdução**
+O Nginx (pronuncia-se "Enginex") é um servidor web leve, que consome pouquíssimos recursos do servidor, e é muito utilizado para servir conteúdo estático, mas nada nos impede de o utilizarmos para servir conteúdo dinâmico, substituindo o Apache.
+
+**Instalando**
+A instação do nginx é mais que tranquila, no meu Ubuntu, tive apenas que mandar:
+
+_$ sudo apt-get install nginx_
+
+Pronto, servido instalado. Se vc tiver o Apache ou outro servidor rodando, preste atenção, o nginx por padrão, vai tentar utilizar a porta 80, como todos. Com isso, já temos um servidor web, mas somente para conteúdo estático, vamos adicionar suporte a PHP. Primeiro vamos instalar o PHP, utilizando o jeito mais prático:
+
+_$ sudo apt-get install php5 php5-common php5-cgi php5-gd php5-mysql php5-sqlite_
+
+Temos agora, um PHP bem básico instalado, sem muitos módulos, pq não é o propósito deste artigo.
+Precisamos agora configurar o nginx para interpretar corretamente nossos scripts PHP, abra o arquivo "default" - aqui em /etc/nginx/sites-availabe - e cole o conteúdo abaixo.
+```
+_server {
+    listen 80;
+    server_name localhost;
+    location / {
+        root /var/www; index index.php index.html index.htm;
+        autoindex off;
+    }
+    location ~ \.php$ {
+        fastcgi_pass unix:/tmp/php-cgi.pid;
+        fastcgi_index index.php;
+        fastcgi_param SCRIPT_FILENAME /var/www/$fastcgi_script_name;
+        include fastcgi_params;
+    }
+}_
+```
+Essa é uma regrinha simples, que faz com que todos os arquivos com extensão ".php" requisitado pelo cliente, seja enviado e processado pelo php-cgi. É necessário também, habilitar uma linha no php.ini (/etc/php5/cgi/php.ini):
+```
+_cgi.fix_pathinfo=1 _
+```
+Rodando o PHP como daemon No nosso caso, vamos utilizar o PHP no modo CGI,como você viu, as requisições a scripts PHP são encaminhadas via proxy para um socket. Cole o conteúdo abaixo em um aquivo vazio, vamos chamar de php-fcgi:
+
+```
+#!/bin/sh
+#
+# Author: Till Klampaeckel
+#
+# Credits
+#
+#  * original script: http://unix.derkeiler.com/Mailing-Lists/FreeBSD/questions/2007-09/msg00468.html
+#  * improved: http://till.klampaeckel.de/blog/archives/30-PHP-performance-III-Running-nginx.html
+#  * all linux start script fu inspired by CouchDB's start script (by Noah Slater)
+#
+
+SCRIPT_OK=0
+SCRIPT_ERROR=1
+
+DESCRIPTION="php-fcgi super-duper-control thing"
+NAME=php-fgcid
+SCRIPT_NAME=$(basename $0)
+
+WWW_USER=www-data
+WWW_GROUP=www-data
+PHP_CGI=/usr/bin/php-cgi
+
+phpfcgid_children="2"
+phpfcgid_requests="100"
+
+log_daemon_msg () {
+    echo $@
+}
+
+log_end_msg () {
+    # Dummy function to be replaced by LSB library.
+    if test "$1" != "0"; then
+        echo "Error with $DESCRIPTION: $NAME"
+    fi
+
+    return $1
+}
+
+phpfcgid_start() {
+    echo "Starting $NAME with $phpfcgid_children children (req: $phpfcgid_requests)."
+
+    export PHP_FCGI_CHILDREN=$phpfcgid_children
+    export PHP_FCGI_MAX_REQUESTS=$phpfcgid_requests
+
+    su -m ${WWW_USER} -c "${PHP_CGI} -b /tmp/php-cgi.pid &"
+}
+
+phpfcgid_stop() {
+    echo "Stopping $NAME."
+
+    pids=`pgrep php-cgi`
+
+    pkill php-cgi
+}
+
+phpfcgid_status() {
+    log_daemon_msg "To be implemented: status"
+    log_end_msg $SCRIPT_ERROR
+}
+
+
+parse_script_option_list () {
+
+    case "$1" in
+        start)
+            log_daemon_msg "Starting $DESCRIPTION" $NAME
+            if phpfcgid_start; then
+                log_end_msg $SCRIPT_OK
+            else
+                log_end_msg $SCRIPT_ERROR
+            fi
+            ;;
+        stop)
+            log_daemon_msg "Stopping $DESCRIPTION" $NAME
+            if phpfcgid_stop; then
+                log_end_msg $SCRIPT_OK
+            else
+                log_end_msg $SCRIPT_ERROR
+            fi
+            ;;
+        restart|force-reload)
+            log_daemon_msg "Restarting $DESCRIPTION" $NAME
+            if phpfcgid_stop; then
+                if phpfcgid_start; then
+                    log_end_msg $SCRIPT_OK
+                else
+                    log_end_msg $SCRIPT_ERROR
+                fi
+            else
+                log_end_msg $SCRIPT_ERROR
+            fi
+            ;;
+        status)
+            phpfcgid_status
+            ;;
+        *)
+            cat <&2
+Usage: $SCRIPT_NAME {start|stop|restart|force-reload|status}
+EOF
+            exit $SCRIPT_ERROR
+            ;;
+    esac
+}
+
+parse_script_option_list $@
+
+```
+Atribuímos permissão de execução e rodamos, pronto, suporte a PHP instalado. De quebra, já colocamos para iniciar logo após o boot.
+```
+_$ chmod +x php-fcgi
+$ sudo mv php-fcgi /etc/init.d/
+$ sudo update-rc.d php-fcgi defaults
+$ sudo /etc/init.d/php-fcgi start
+$ sudo /etc/init.d/nginx restart _
+```
+**Conclusão**
+O nginx é um servidor web pronto que na minha opinião, já está pronto para substituir o Apache em aplicações de pequeno e médio porte, sites pessoais, blog e etc, onde se queira economizar ao máximo os recursos, ou mesmo servir conteúdo estático apenas. É difícil mensurar a carga máxima que ele pode aguentar, mas em todos os meus testes de carga, ele sempre respondeu muito bem.
+
+No Wiki, há inclusive uma configuração que fizeram, utilizando FreeBSD, com 45k conexões ativas, vale a pena conferir.

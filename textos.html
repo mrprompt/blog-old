@@ -1,0 +1,38 @@
+---
+layout: default
+title: Textos
+---
+<!--start: Wrapper-->
+<div id="wrapper">
+    <!--start: Container -->
+    <div class="container">
+        <!-- start: Row -->
+        <div class="content clearfix">
+            <div class="span11">
+                <!-- start: Row -->
+                <div class="row">
+                    <div class="title">
+                        <h3>Últimos textos</h3>
+                    </div>
+                    <ul class="unlysted">
+                        {% for post in site.posts %}
+                        <li>
+                            <article>
+                                <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                                <h6>{{ post.date | date_to_string }}</h6>
+                                <p>{{ post.excerpt | strip_html }}</p>
+                                <a href="{{ post.url }}">ver mais &raquo;</a>
+                            </article>
+                            <hr>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <!-- end: Row -->
+            </div>
+        </div>
+        <hr>
+    </div>
+    <!--end: Container-->
+</div>
+<!-- end: Wrapper  -->

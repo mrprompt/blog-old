@@ -1,0 +1,7 @@
+name: Thiago mrprompt Paes - Site Pessoal
+markdown: redcarpet
+pygments: true
+timezone: America/Sao_Paulo
+limit_posts: 0
+paginate: 5
+paginate_path: page:num
