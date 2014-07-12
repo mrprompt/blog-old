@@ -101,7 +101,7 @@
 	                    <ul class="posts">
 	                      {% for post in site.posts %}
 	                        <li>
-	                          <span><i class="mini-ico-calendar"></i>{{ post.date }}</span> <br>
+	                          <span><i class="mini-ico-calendar"></i>{{ post.date | date_to_string }}</span> <br>
 	                          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 	                        </li>
 	                      {% endfor %}
