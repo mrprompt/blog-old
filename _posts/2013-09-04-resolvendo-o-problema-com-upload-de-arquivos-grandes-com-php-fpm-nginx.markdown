@@ -18,7 +18,7 @@ aplicação. Nos logs, eu vi o seguinte aviso:
 upload_max_filesize = 100M post_max_size = 100M
 
    Fuçando um pouco, achei a diretiva :
-{% highlight nginx %}
+{% highlight nginx linenos %}
 http {
     ...
     client_max_body_size 100m;

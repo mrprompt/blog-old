@@ -1,18 +1,14 @@
 ---
-layout: post
+layout: blog
 author: mrprompt
 comments: true
 date: 2013-04-18 19:33:00+00:00
-layout: post
 slug: alterando-a-pasta-padrao-de-projetos-do-netbeans
 title: Alterando a pasta padrão de projetos do NetBeans
-wordpress_id: 8
-categories:
-- NetBeans
-- software livre
 ---
 
-Eu pessoalmente, não gosto do padrão NetBeansProjects, gosto de deixar meus projetos organizados de outra forma, só que o que me irrita, é toda hora o NetBeans criar esta pasta no meu diretório home, então, se você também se irrita, fica a dica para evitar isso:
+Eu pessoalmente, não gosto do padrão NetBeansProjects, gosto de deixar meus projetos organizados de outra forma, só que o que me irrita, 
+é toda hora o NetBeans criar esta pasta no meu diretório home, então, se você também se irrita, fica a dica para evitar isso:
 
 Adicione a variável _projectsFolder_ ao arquivo _projectui.properties_ informando o diretorio que você deseja ser padrão dos seus projetos, ficando assim:
 projectsFolder=/Users/mrprompt/Sites
