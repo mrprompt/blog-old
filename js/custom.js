@@ -1,3 +1,13 @@
+/* -------------------- Twitter --------------------- */
+
+jQuery(document).ready(function($){
+	
+	$.getJSON('http://api.twitter.com/1/statuses/user_timeline/lukaszholeczek.json?count=3&callback=?', function(tweets){
+		$("#twitter").html(tz_format_twitter(tweets));
+	}); 
+
+});
+
 /* ------------------- Client Carousel --------------------- */
 
 jQuery(document).ready(function($){
@@ -16,16 +26,16 @@ jQuery(document).ready(function($){
       });
 
 	$('#flex1').flexslider();
-
+	
 	$('#flex2').flexslider({
 	    animation: "slide",
 	    controlNav: "thumbnails"
 	 });
-
-});
+	
+}); 
 
 jQuery(document).ready(function($){
-
+	
 	/* ------------------- Fancybox --------------------- */
 
 	(function() {
@@ -57,18 +67,18 @@ jQuery(document).ready(function($){
 
 
 	})();
-
-
+	
+	
 
 	/* ------------------ Back To Top ------------------- */
 
 	jQuery('#footer-menu-back-to-top a').click(function(){
-		jQuery('html, body').animate({scrollTop:0}, 300);
-		return false;
+		jQuery('html, body').animate({scrollTop:0}, 300); 
+		return false; 
 	});
+	
 
-
-	/* --------------------- Tabs ------------------------ */
+	/* --------------------- Tabs ------------------------ */	
 
 		(function() {
 
@@ -98,8 +108,8 @@ jQuery(document).ready(function($){
 			});
 
 		})();
-
-
+		
+			
 });
 
 /* ------------------ Tooltips ----------------- */
@@ -112,10 +122,10 @@ jQuery(document).ready(function($) {
 
 });
 
-/* ------------------ Progress Bar ------------------- */
+/* ------------------ Progress Bar ------------------- */	
 
 jQuery(document).ready(function($){
-
+	
 	$(".meter > span").each(function() {
 		$(this)
 		.data("origWidth", $(this).width())
@@ -129,7 +139,7 @@ jQuery(document).ready(function($){
 /* ------------------- Parallax --------------------- */
 
 jQuery(document).ready(function($){
-
+	
 	$('#da-slider').cslider({
 		autoplay	: true,
 		bgincrement	: 0
@@ -140,21 +150,21 @@ jQuery(document).ready(function($){
 /* ------------------ Image Overlay ----------------- */
 
 jQuery(document).ready(function($) {
-
+	
 	$('.picture a').hover(function () {
 		$(this).find('.image-overlay-zoom, .image-overlay-link').stop().fadeTo('fast', 1);
 	},function () {
 		$(this).find('.image-overlay-zoom, .image-overlay-link').stop().fadeTo('fast', 0);
 	});
-
+	
 });
 
 /* -------------------- Isotope --------------------- */
 
 jQuery(document).ready(function($) {
-
+	
 	$('#portfolio-wrapper').imagesLoaded(function() {
-
+		
 		var $container = $('#portfolio-wrapper');
 			$select = $('#filters select');
 
@@ -168,7 +178,7 @@ jQuery(document).ready(function($) {
 
 		// update columnWidth on window resize
 		$(window).smartresize(function(){
-
+		
 			$container.isotope({
 			// update columnWidth to a percentage of container width
 			masonry: { columnWidth: $container.width() / 12 }
@@ -181,20 +191,20 @@ jQuery(document).ready(function($) {
 		});
 
 		$select.change(function() {
-
+			
 			var filters = $(this).val();
 
 				$container.isotope({
 					filter: filters
 				});
-
+			
 			});
 
 			var $optionSets = $('#filters .option-set'),
 		  	$optionLinks = $optionSets.find('a');
 
 		  	$optionLinks.click(function(){
-
+			
 				var $this = $(this);
 				// don't proceed if already selected
 				if ( $this.hasClass('selected') ) {
@@ -220,9 +230,9 @@ jQuery(document).ready(function($) {
 			}
 
 			return false;
-
+			
 		  });
-
+		
 	});
-
+	
 });
