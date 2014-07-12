@@ -1,20 +1,10 @@
 ---
-layout: post
+layout: blog
 author: mrprompt
 comments: true
 date: 2013-03-24 09:19:00+00:00
-layout: post
 slug: php-gtk-no-lion
 title: PHP-GTK no Lion
-wordpress_id: 9
-categories:
-- lion
-- mac
-- os x
-- php
-- php-cli
-- php-gtk
-- php-gtk2
 ---
 
 Desde que comprei o MacBook, não consegui mais trabalhar com PHP-GTK, pois não teve jeito de conseguir compilar a extensão.

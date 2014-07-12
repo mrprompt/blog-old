@@ -2,9 +2,6 @@
 title: mrprompt
 email: mrprompt@gmail.com
 description: mrprompt.com.br desenvolvimento web
-baseurl: ""
-url: "http://mrprompt.com.br"
-github_username: mrprompt
 
 # Build settings
 name: Thiago mrprompt Paes - Site Pessoal
@@ -14,4 +11,5 @@ timezone: America/Sao_Paulo
 limit_posts: 0
 paginate: 5
 paginate_path: page:num
+paginate_file: blog.html
 permalink: pretty

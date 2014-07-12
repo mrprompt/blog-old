@@ -1,16 +1,10 @@
 ---
-layout: post
+layout: blog
 author: mrprompt
 comments: true
 date: 2013-09-04 02:49:00+00:00
-layout: post
-slug: resolvendo-o-problema-com-upload-de-arquivos-grandes-com-php-fpm-nginx
-title: Resolvendo o problema com upload de arquivos grandes com PHP-FPM + Nginx
-wordpress_id: 5
-categories:
-- nginx
-- php
-- php-fpm
+slug: resolvendo-o-problema-com-upload-de-arquivos-grandes-no-nginx
+title: Resolvendo o problema com upload de arquivos grandes no Nginx
 ---
 
 Me deparei essa semana com um problema com um cliente que estava tentando

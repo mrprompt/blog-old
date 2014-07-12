@@ -1,20 +1,11 @@
 ---
-layout: post
+layout: blog
 author: mrprompt
 comments: true
 date: 2007-09-22 03:25:00+00:00
-layout: post
 slug: criando-um-access-point
 title: Criando um Access Point
-categories:
-- access point
-- caseiro
-- compartilhar
-- internet
-- rede
-- sem fio
-- wifi
-- wireless
+
 ---
 
 Introdução
