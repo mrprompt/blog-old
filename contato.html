@@ -1,0 +1,82 @@
+---
+layout: contato
+title: Entre em contato
+---
+<!-- start: Map -->
+<div>
+
+	<!-- starts: Google Maps -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<div id="googlemaps" class="google-map google-map-full"></div>
+	<div id="mobileOverlay"></div>
+	<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+	<script src="/js/jquery.gmap.min.js"></script>
+	<script type="text/javascript">
+		$('#googlemaps').gMap({
+			controls : {
+				panControl : false,
+				zoomControl : false,
+				mapTypeControl : false,
+				scaleControl : false,
+				streetViewControl : false,
+				overviewMapControl : false
+			},
+			maptype : 'ROADMAP',
+			scrollwheel : false,
+			zoom : 13,
+			markers : [{
+				address : 'Estreito, Florianópolis, Santa Catarina, Brasil',
+				html : 'Entre em contato agora mesmo e faça seu orçamento de outsource',
+				popup : true,
+			}],
+		});
+	</script>
+	<!-- end: Google Maps -->
+</div>
+<!-- end: Map -->
+
+<!-- start: Wrapper -->
+<div id="wrapper">
+	<!-- start: Container -->
+	<div class="container">
+		<hr>
+		
+		<!-- start: Row -->
+		<div class="row">
+		    <div class="span4"></div>
+		  
+			<!-- start: Contact Info -->
+			<div class="span4">
+				<div class="title-out">
+					<h3>Entre em contato</h3>
+					<h4>Deseja fazer um orçamento ou ficou com alguma dúvida?</h4>
+				</div>
+
+				<p>
+					<i class="ico-zg-iphone"></i> +55 (48) 9185-8982
+				</p>
+				<p>
+					<i class="mini-ico-envelope"></i> <a href="mailto:mrprompt@gmail.com">mrprompt@gmail.com</a>
+				</p>
+				
+				<ul class="social-bookmarks">
+					<li class="delicious"><a href="https://delicious.com/mrprompt">delicious</a></li>
+					<li class="facebook"><a href="https://www.facebook.com/mrprompt">facebook</a></li>
+					<li class="github"><a href="http://github.com/mrprompt">github</a></li>
+					<li class="googleplus"><a href="https://plus.google.com/u/0/+ThiagoPaes_mrprompt/posts">googleplus</a></li>
+					<li class="grooveshark"><a href="http://grooveshark.com/#!/mrprompt">grooveshark</a></li>
+					<li class="linkedin"><a href="br.linkedin.com/in/paesthiago/">linkedin</a></li>
+					<li class="youtube"><a href="https://www.youtube.com/channel/UCpcXaxnJnTGge2tx_UlO-tw">youtube</a></li>
+				</ul>
+			</div>
+			<!-- end: Contact Info -->
+
+		    <div class="span4"></div>
+		</div>
+		<!-- end: Row -->
+		
+		<hr>
+	</div>
+	<!-- end: Container -->
+</div>
+<!-- end: Wrapper  -->

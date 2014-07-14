@@ -1,0 +1,15 @@
+# Site settings
+title: mrprompt
+email: mrprompt@gmail.com
+description: mrprompt.com.br desenvolvimento web
+
+# Build settings
+name: Thiago mrprompt Paes - Site Pessoal
+markdown: redcarpet
+highlighter: pygments
+timezone: America/Sao_Paulo
+limit_posts: 0
+paginate: 5
+paginate_path: page:num
+paginate_file: blog.html
+permalink: pretty
