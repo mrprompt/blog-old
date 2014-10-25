@@ -229,6 +229,16 @@ header {
 	margin-bottom: -3px;
 }
 
+.brand > img {
+	/*width: 130px;*/
+	height: 80px;
+	position: relative;
+	/*top: -25px;*/
+}
+
+.brand > span {
+	display: none;
+}
 .brand span {
 	color: #f16529;
 }

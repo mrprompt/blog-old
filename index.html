@@ -1,88 +1,60 @@
 ---
-layout: default
-title: mrprompt.com.br
+layout: blog
+title: Blog do MrPrompt
+slug: blog
 ---
-<!-- start: Slider -->
-<div class="slider-wrapper">
-    <div id="da-slider" class="da-slider">
-        <div class="da-slide">
-            <h2>ZCE</h2>
-            <p>
-                Sua aplicação será desenvolvida por um profissional certificado pela Zend, garantindo um produto
-                bem desenvolvido e em contínuo crescimento.
-            </p>
-            <div class="da-img">
-                <img src="img/parallax-slider/zce-php-engineer.png" alt="image02" />
-            </div>
-        </div>
-        <div class="da-slide">
-            <h2>Aplicações Responsivas</h2>
-            <p>
-                Desenvolvimento de aplicações web com design responsivo, permitindo seu uso nos mais diferentes 
-                tipos de dispositivos.
-            </p>
-            <div class="da-img">
-                <img src="img/parallax-slider/responsive.png" alt="image01" />
-            </div>
-        </div>
-        <div class="da-slide">
-            <h2>HTML5</h2>
-            <p>
-                Aplicações ricas, em HTML5, utilizando todo o poder dos mais modernos navegadores.
-            </p>
-            <div class="da-img">
-                <img src="img/parallax-slider/html5.png" alt="image03" />
-            </div>
-        </div>
-        <nav class="da-arrows">
-            <span class="da-arrows-prev"></span> <span class="da-arrows-next"></span>
-        </nav>
-    </div>
-</div>
-<!-- end: Slider -->
-
 <!--start: Wrapper-->
 <div id="wrapper">
-    <!--start: Container -->
-    <div class="container">
-        <hr>
+	<!--start: Container -->
+	<div class="container">
+		<!--start: Row -->
+		<div class="row">
+			<div class="span9">
+                {% for post in site.posts %}
+				<!-- start: Post -->
+				<div class="post">
+					<span class="post-icon standard"><i class="ico-pen circle"></i></span>
+					<div class="post-content">
+						<div class="post-title">
+							<h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+						</div>
+						<div class="post-description">
+							{{ post.excerpt | strip_html }}
+						</div>
+						<a class="post-entry" href="{{ post.url | prepend: site.baseurl }}">Visualizar</a>
+						<div class="post-meta">
+							<span><i class="mini-ico-calendar"></i>{{ post.date | date_to_string }}</span> 
+							<span><i class="mini-ico-user"></i>Por <a href="#">{{ post.author }}</a></span> 
+							<!--<span><i class="mini-ico-comment"></i>With <a href="#">89 comments</a></span> -->
+						</div>
+					</div>
+				</div>
+				<!-- end: Post -->
+				{% endfor %}
+			</div>
 
-        <div class="content clearfix">
-            <!-- start: Row -->
-            <div class="row">
-	            <div class="title">
-	                <h3>Conheça</h3>
-	            </div>
-	            <div class="span2">
-                    <img src="img/mrprompt-picture.jpg" class="img-polaroid" width="160">
-	            </div>
-	            <div class="span9 offset0">
-		            <p>
-		              Acredito que escrever um software é uma arte, que envolve ciência, psicologia e paixão.
-	                </p>
-	                <p>
-	                   É preciso entender a necessidade e suprir a mesma da melhor forma possível. E é exatamente desta forma que desenvolvo  soluções.
-	                </p>
-	                <p>
-	                   Com mais de 15 anos de experiência, desenvolvo aplicações com paixão, buscando as melhores formas e metodologias para melhor atender a sua necessidade 
-	                   como cliente, independente do tamanho.
-	                </p>
-	            </div>
-            </div>
-            <!-- end: Row -->
-
-            <div class="clearfix"></div>
-            
-            <hr class="clean">
-            
-            <div class="contact">
-                Deseja fazer um orçamento?
-                <i class="ico-envelope ico-white"></i>mrprompt@gmail.com
-                <i class="ico-iphone ico-white"></i>+55 (48) 9185-8982
-            </div>
-        </div>
-        <hr>
-    </div>
-    <!--end: Container-->
+			<!-- start: Sidebar -->
+			<div class="span3 hidden-phone">
+				<!-- start: Text Widget -->
+				<div class="widget first">
+					<div class="title">
+						<h3>Outros posts</h3>
+					</div>
+					<ul class="posts">
+					  {% for post in site.posts %}
+					    <li>
+					      <span><i class="mini-ico-calendar"></i>{{ post.date | date_to_string  }}</span> <br>
+					      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+					    </li>
+					  {% endfor %}
+					</ul>
+				</div>
+				<!-- end: Text Widget -->
+			</div>
+			<!-- end: Sidebar -->
+		</div>
+		<!--end: Row -->
+	</div>
+	<!--end: Container-->
 </div>
 <!-- end: Wrapper  -->
