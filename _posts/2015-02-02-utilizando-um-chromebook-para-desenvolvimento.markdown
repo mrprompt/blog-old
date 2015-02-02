@@ -20,6 +20,8 @@ e [Zend Studio](http://www.zend.com/en/products/studio), o primeiro utilizo para
 em *Javascript* e o segundo claro, para os escritos em *PHP* - que somente virou uma opção 
 porque que ganhei a licença de desenvolvedor quando me certifiquei no ano passado.
 
+- - -
+
 ## Ambientes de Desenvolvimento
 Para me acostumar com o a proposta do ChromeBook, passei a utilizar no meu
 dia-a-dia - inclusive no desktop - alguns ambientes na web
@@ -30,6 +32,8 @@ dia-a-dia - inclusive no desktop - alguns ambientes na web
 - [Nitrous](https://www.nitrous.io)
 - [Runnable](http://runnable.com)
 - [Chrome Dev Editor](http://goo.gl/SA0Mc6)
+
+- - -
 
 ### Cloud9
 O [Cloud9](https://ide.c9.io) foi a IDE que mais me surpreendeu e logo se tornou 
@@ -114,6 +118,8 @@ Inclusive com a possibilidade de importar minhas chaves.
 
 O ChromeBook também possui um terminal (bem limitado diga-se de passagem) com um cliente SSH, mas não consegui 
 testar.
+
+- - -
 
 ## Conclusões
 O ChromeBook é uma máquina legal? É. Principalmente para quem desejar utilizar no dia-a-dia 
