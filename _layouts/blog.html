@@ -3,7 +3,7 @@
 <head>
     <!-- start: Meta -->
     <meta charset="utf-8">
-    <title>{{ page.title }}</title>
+    <title>{{ page.title }} - Blog do Thiago Paes</title>
     <meta name="description" content="{{ page.description }}">
     <meta name="keywords" content="html, css, javascript, js, php, software, livre, open, source">
     <meta name="author" content="Thiago Paes - mrprompt">
@@ -59,19 +59,19 @@
     </header>
     <!--end: Header-->
 
-	<!-- start: Page Title -->
-	<div id="page-title">
-	    <div id="page-title-inner">
-	        <!-- start: Container -->
-	        <div class="container">
-	            <h2>
-	                <i class="ico-pencil"></i>{{ page.title }}
-	            </h2>
-	        </div>
-	        <!-- end: Container  -->
-	    </div>
-	</div>
-	<!-- end: Page Title -->
+    {% if page.title %}
+    	<!-- start: Page Title -->
+    	<div id="page-title">
+    	    <div id="page-title-inner">
+    	        <!-- start: Container -->
+    	        <div class="container">
+    	            <h2>{{ page.title }}</h2>
+    	        </div>
+    	        <!-- end: Container  -->
+    	    </div>
+    	</div>
+    	<!-- end: Page Title -->
+    {% endif %}
 	
 	<!--start: Wrapper-->
 	<div id="wrapper">
@@ -89,8 +89,7 @@
 	            </div>
 	
 	            <!-- start: Sidebar -->
-	            <div class="span3 hidden-phone">
-	
+	            <div class="span3">
 	                <!-- start: Text Widget -->
 	                <div class="widget first">
 	                    <div class="title">
@@ -126,7 +125,7 @@
 	<!-- end: Wrapper  -->
 
     <!-- start: Footer Menu -->
-    <div id="footer-menu" class="hidden-tablet hidden-phone">
+    <div id="footer-menu" class="hidden-tablet">
         <!-- start: Container -->
         <div class="container">
             <!-- start: Row -->
@@ -143,10 +142,7 @@
                 <div class="span9">
                     <div id="footer-menu-links">
                         <ul id="footer-nav">
-                            <li><a href="http://www.mrprompt.com.br">Site</a></li>
-                            <li><a href="http://www.mrprompt.com.br/sobre">Sobre</a></li>
-                            <li><a href="http://www.mrprompt.com.br/servicos">Serviços</a></li>
-                            <li><a href="http://www.mrprompt.com.br/contato">Contato</a></li>
+                            <li><a href="http://about.me/mrprompt">Quem?</a></li>
                         </ul>
                     </div>
                 </div>
@@ -165,20 +161,6 @@
         <!-- end: Container  -->
     </div>
     <!-- end: Footer Menu -->
-
-    <!-- start: Copyright -->
-    <div id="copyright">
-        <!-- start: Container -->
-        <div class="container">
-            <div class="sixteen columns">
-                <p>
-                    &copy; 2014 - <a href="http://mrprompt.com.br">mrprompt.com.br</a>
-                </p>
-            </div>
-        </div>
-        <!-- end: Container  -->
-    </div>
-    <!-- end: Copyright -->
 
     <!-- start: Java Script -->
     <!-- Placed at the end of the document so the pages load faster -->
