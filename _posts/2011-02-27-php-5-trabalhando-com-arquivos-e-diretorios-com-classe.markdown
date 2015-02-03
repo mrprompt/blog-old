@@ -1,9 +1,9 @@
 ---
-layout: post
+layout: blog
 author: mrprompt
 comments: true
 date: 2011-02-27 20:52:00+00:00
-layout: post
+layout: blog
 slug: php-5-trabalhando-com-arquivos-e-diretorios-com-classe
 title: 'PHP 5: Trabalhando com Arquivos e Diretórios com classe'
 wordpress_id: 15

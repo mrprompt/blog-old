@@ -1,9 +1,9 @@
 ---
-layout: post
+layout: blog
 author: mrprompt
 comments: true
 date: 2007-12-06 04:26:00+00:00
-layout: post
+layout: blog
 slug: instalando-o-xcache-no-ubuntu
 title: Instalando o XCache no Ubuntu
 wordpress_id: 29

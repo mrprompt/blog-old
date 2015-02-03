@@ -1,9 +1,9 @@
 ---
-layout: post
+layout: blog
 author: mrprompt
 comments: true
 date: 2007-09-22 03:25:00+00:00
-layout: post
+layout: blog
 slug: desenvolvendo-em-php-com-o-eclipse
 title: Desenvolvendo em PHP com o Eclipse
 wordpress_id: 32

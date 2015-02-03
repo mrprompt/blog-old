@@ -1,9 +1,9 @@
 ---
-layout: post
+layout: blog
 author: mrprompt
 comments: true
 date: 2008-10-17 03:31:00+00:00
-layout: post
+layout: blog
 slug: transparencia-sem-compiz
 title: Transparência sem Compiz
 wordpress_id: 24

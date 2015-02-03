@@ -1,9 +1,9 @@
 ---
-layout: post
+layout: blog
 author: mrprompt
 comments: true
 date: 2008-05-07 03:27:00+00:00
-layout: post
+layout: blog
 slug: netbeans-ide-early-access-for-php
 title: NetBeans IDE Early Access for PHP
 wordpress_id: 25

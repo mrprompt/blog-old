@@ -1,9 +1,9 @@
 ---
-layout: post
+layout: blog
 author: mrprompt
 comments: true
 date: 2009-07-25 03:31:00+00:00
-layout: post
+layout: blog
 slug: ubuntu-voando-com-openbox
 title: Ubuntu voando com Openbox
 wordpress_id: 21

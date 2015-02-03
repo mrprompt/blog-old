@@ -1,9 +1,9 @@
 ---
-layout: post
+layout: blog
 author: mrprompt
 comments: true
 date: 2008-02-25 04:23:00+00:00
-layout: post
+layout: blog
 slug: alterando-permissoes-recursivamente
 title: Alterando permissões recursivamente
 wordpress_id: 28

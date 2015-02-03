@@ -1,9 +1,9 @@
 ---
-layout: post
+layout: blog
 author: mrprompt
 comments: true
 date: 2011-01-22 15:59:00+00:00
-layout: post
+layout: blog
 slug: utilizando-rotas-com-zend-framework
 title: Utilizando Rotas com Zend Framework
 wordpress_id: 18

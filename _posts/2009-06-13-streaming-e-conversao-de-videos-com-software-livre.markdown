@@ -1,9 +1,9 @@
 ---
-layout: post
+layout: blog
 author: mrprompt
 comments: true
 date: 2009-06-13 03:32:00+00:00
-layout: post
+layout: blog
 slug: streaming-e-conversao-de-videos-com-software-livre
 title: Streaming e conversão de vídeos com Software Livre
 wordpress_id: 22

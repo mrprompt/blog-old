@@ -1,9 +1,9 @@
 ---
-layout: post
+layout: blog
 author: mrprompt
 comments: true
 date: 2012-04-04 03:00:00+00:00
-layout: post
+layout: blog
 slug: sistema-de-ponto-on-line
 title: Sistema de Ponto On Line
 wordpress_id: 14

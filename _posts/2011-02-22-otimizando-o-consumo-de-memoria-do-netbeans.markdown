@@ -1,9 +1,9 @@
 ---
-layout: post
+layout: blog
 author: mrprompt
 comments: true
 date: 2011-02-22 22:59:00+00:00
-layout: post
+layout: blog
 slug: otimizando-o-consumo-de-memoria-do-netbeans
 title: Otimizando o consumo de memória do NetBeans
 wordpress_id: 16

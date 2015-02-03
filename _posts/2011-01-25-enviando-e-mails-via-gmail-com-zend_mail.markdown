@@ -1,9 +1,9 @@
 ---
-layout: post
+layout: blog
 author: mrprompt
 comments: true
 date: 2011-01-25 22:58:00+00:00
-layout: post
+layout: blog
 slug: enviando-e-mails-via-gmail-com-zend_mail
 title: Enviando e-mails via Gmail com Zend_Mail
 wordpress_id: 17

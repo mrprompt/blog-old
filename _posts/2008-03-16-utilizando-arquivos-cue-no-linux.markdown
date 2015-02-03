@@ -1,9 +1,9 @@
 ---
-layout: post
+layout: blog
 author: mrprompt
 comments: true
 date: 2008-03-16 03:32:00+00:00
-layout: post
+layout: blog
 slug: utilizando-arquivos-cue-no-linux
 title: Utilizando arquivos .CUE no Linux
 wordpress_id: 27

@@ -1,9 +1,9 @@
 ---
-layout: post
+layout: blog
 author: mrprompt
 comments: true
 date: 2008-11-15 04:24:00+00:00
-layout: post
+layout: blog
 slug: brincando-com-schemas-no-cake-1-2
 title: Brincando com schemas no Cake 1.2
 wordpress_id: 23
