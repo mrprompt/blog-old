@@ -10,7 +10,7 @@ slug: index
 		<!--start: Row -->
 		<div class="row">
 			<div class="span9">
-                {% for post in site.posts %}
+                {% for post in site.posts limit:5 %}
 				<!-- start: Post -->
 				<div class="post">
 					<span class="post-icon standard"><i class="ico-pen circle"></i></span>
