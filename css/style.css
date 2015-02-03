@@ -2726,3 +2726,8 @@ form#newsletter input[type=submit] {
 	
 }
 	
+
+
+.widget ul li {
+	margin-bottom: 1.5em;
+}
