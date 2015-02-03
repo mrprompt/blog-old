@@ -46,6 +46,10 @@
                         <img src="/img/mrprompt-logo.png" alt="">
                         <span><i class="ico-thin-right-arrow ico-color circle"></i> mr<span>prompt</span></span>
                     </a>
+
+                    <a href="http://www.zend.com/en/yellow-pages/ZEND022815" class="pull-right" target="_blank">
+                        <img src="/img/zce-logo.jpg">
+                    </a>
                 </div>
             </div>
             <!--end: Navigation -->
@@ -78,8 +82,10 @@
 	            <div class="span9">
 	                {{ content }}
 
-                    <div id="disqus_thread"></div>
-                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                    {% if page.comments %}
+                        <div id="disqus_thread"></div>
+                        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                    {% endif %}
 	            </div>
 	
 	            <!-- start: Sidebar -->
