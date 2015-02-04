@@ -2,7 +2,7 @@
 layout: blog
 author: mrprompt
 comments: true
-date: 2009-09-26 03:30:00+00:00
+date: 2015-02-02 00:00:00+00:00
 slug: requisicoes-sincronas-no-nodejs
 title: Requisições Síncronas no NodeJS
 ---
