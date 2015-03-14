@@ -2,7 +2,7 @@
 layout: blog
 author: mrprompt
 comments: true
-date: 2015-02-02 00:00:00+00:00
+date: 2015-03-14 00:00:00+00:00
 slug: fugindo-do-inferno-de-callbacks-no-nodejs
 title: Fugindo do inferno de callbacks no Nodejs
 ---
