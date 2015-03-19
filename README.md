@@ -1,7 +1,6 @@
 mrprompt.github.io
 ==================
 
-blog site pessoal
-
+Blog pessoal
 
 * layout comprado no wrapbootstrap *
