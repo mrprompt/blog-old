@@ -8,11 +8,11 @@
     <meta name="keywords" content="html, css, javascript, js, php, software, livre, open, source">
     <meta name="author" content="Thiago Paes - mrprompt (at) gmail.com">
     <!-- end: Meta -->
-    
+
     <!-- start: Mobile Specific -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- end: Mobile Specific -->
-    
+
     <!-- start: CSS -->
     <link href="/css/bootstrap.css" rel="stylesheet">
     <link href="/css/bootstrap-responsive.css" rel="stylesheet">
@@ -52,7 +52,6 @@
                 </div>
             </div>
             <!--end: Navigation -->
-
         </div>
         <!--end: Container-->
     </header>
@@ -71,7 +70,7 @@
     	</div>
     	<!-- end: Page Title -->
     {% endif %}
-	
+
 	<!--start: Wrapper-->
 	<div id="wrapper">
 	    <!--start: Container -->
@@ -86,7 +85,7 @@
                         <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                     {% endif %}
 	            </div>
-	
+
 	            <!-- start: Sidebar -->
 	            <div class="span3">
                     <!-- start: Text Widget -->
@@ -115,7 +114,7 @@
 	                    <ul class="posts">
 	                      {% for post in site.posts limit:15 %}
                             {% capture year %}{{post.date | date: "%Y"}}{% endcapture %}
-                            
+
                             {% if year == "2015" %}
     	                        <li>
     	                          <span><i class="mini-ico-calendar"></i>{{ post.date | date_to_string }}</span> <br>
@@ -129,7 +128,7 @@
 
                         <span class="text-center">
                             <a href="{{ site.baseurl }}/posts/" class="btn btn-large btn-primary">Todos os posts</a>
-                        </span> 
+                        </span>
 	                </div>
 	                <!-- end: Text Widget -->
                 </div>

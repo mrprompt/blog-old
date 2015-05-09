@@ -1,0 +1,96 @@
+---
+layout: blog
+author: mrprompt
+comments: true
+date: 2015-04-29 12:52:45+00:00
+slug: samsung
+title: Porque NÃO comprar um Samsung Galaxy Gran Prime Duos
+---
+Início do mês de Abril, decidi trocar meu MotoG, que estava com a tela quebrada e apresentando vários problemas
+por um celular novo. Fui até o shopping e escolhi a melhor opção (custo + benefício) pra mim. A apresentação da
+vendedora foi ótima e o celular, um *Galaxy Gran Prime Duos* me pareceu uma ótima opção e resolvi levar o mesmo
+pra casa.
+
+Após pouco mais de uma semana de utilização, vi que o celular apresentava muitos problemas, como travamentos
+constantes e tudo mais. Optei por efetuar um reset de fábrica, e não adiantou. O celular vem repleto de aplicativos
+inúteis instalados pela *Oi* do qual não é possível remover. Após dois resets, decidi enviar um e-mail para a
+Samsung afim de demonstar minha insatisfação com o produto, já que isso não é um problema coberto pela garantia.
+
+Abaixo, uma cópia do e-mail que enviei pelo site deles:
+
+```
+Olá :)
+Comprei um celular Galaxy Gran Prime Duos SM-G530H início deste mês por ser até então, um cliente satisfeito com os produtos dos senhores, tanto que minha última aquisição, havia sido um ChromeBook na loja física dos senhores em Florianópolis. Porém, menos de um mês após a compra do celular, sinto-me profundamente arrependido da aquisição, pois o produto demonstra-se infinitamente inferior a muitos celulares, inclusive ao meu último (um Moto G) de preço bem semelhante.
+
+Repetindo, menos de um mês após a compra, já achei necessário formatar o celular para as configurações de fábrica DUAS vezes devido aos constantes travamentos, mesmo com poucos aplicativos abertos (uso basicamente Whatsapp, Facebook e E-mail) a extrema demora para obter respostas (o celular por muitas vezes, fica parado em uma tela preta, sem responder quaisquer comandos dos botões físicos ou _quotvirtuais_quot).
+
+Fora que, apesar de ter comprado o mesmo em uma loja (Colombo), o mesmo veio como se fosse da Operadora Oi, com inúmeros aplicativos inúteis instalados e que não possibilitam a desinstalação sem que eu faça root do aparelho.
+
+Infelizmente, sinto que joguei dinheiro fora com este aparelho, e espero tão logo quanto possível, efetuar a troca do mesmo. Sendo que sinceramente, o que eu mais desejava, era o meu dinheiro de votla :(
+
+Fica aqui registrado, o profundo descontentamento de um consumidor decepcionado por gastar um valor significável em um produto, que demonstrou-se de péssima qualidade.
+```
+
+Alguns dias depois, recebo uma resposta dos mesmos e monstro abaixo:
+
+```
+Resposta do consultor
+Olá, Thiago,
+
+Obrigada por acessar o site Samsung, é uma enorme satisfação tê-lo como cliente.
+
+Segue o protocolo do atendimento 2135475381, orientamos que utilize sempre que entrar em contato conosco.
+
+Em atenção ao seu e-mail, por gentileza realize os testes abaixo:
+
+Retire chip e cartão de memória do aparelho e verifique se persiste.
+
+Por gentileza pressione o botão de Aplicativos Recentes (botão à direita do central ou botão do meio) > selecione no ícone de desenho de gráfico de pizza > selecione em Aplicações Ativas > selecione em encerrar Tudo.
+
+Verifique se o aparelho trava em algum aplicativo especifico, caso positivo exclua o mesmo.
+
+Feche todos os aplicativos que estão em execução e verifique se travamento persiste.
+
+Verifique possibilidade de realizar uma atualização de software no aparelho através das configurações abaixo:
+
+Menu> configurações> sobre o dispositivo (telefone)> atualização de software> atualizar.
+
+Ou através do software de sincronismo de seu aparelho, no caso o Samsung Kies segue link para download:
+
+http://www.samsung.com/br/support/usefulsoftware/KIES/JSP
+
+Realize uma restauração de fabrica no aparelho:
+
+Antes de zerar o aparelho faça um backup dos dados armazenados no aparelho. Conecte o aparelho ao PC por intermédio do cabo USB, abra o Samsung Kies, clique em “Criar cópia de segurança/Restaurar”, selecione os itens para os quais irá criar uma cópia de segurança, clique no botão “Cópia de segurança”, aguarde a cópia se concluída e clique no botão “Concluir”.
+
+Menu > Configurações > Fazer backup e redefinir > Restaurar padrão de fábrica > Zerar dispositivo > Apagar tudo.
+
+Para restaurar uma cópia de segurança criada através do Samsung Kies clique em “Criar cópia de segurança/Restaurar”, clique no botão “Restaurar”, no popup que abrirá selecione o ficheiro referente ao backup que deseja restaurar, clique no botão “Seguinte”, e em “Iniciar restauro”, aguarde até que o procedimento seja concluído e clique em “Concluir”.
+
+Caso não obtenha êxito, para uma análise técnica de seu produto será necessário encaminhá-lo para uma assistência técnica.
+
+Segue abaixo o link para que faça a busca de uma assistência técnica mais próxima de sua localidade.
+
+http://www.samsung.com/br/support/location/supportServiceLocation.do?page=SERVICE.LOCATION
+
+Caso encontre dificuldades na localização de assistências, nos encaminhe novamente seu e-mail especificando sua cidade e CEP.
+
+Peço por gentileza que responda nossa pesquisa de satisfação abaixo em relação ao meu atendimento. A sua opinião é fundamental para a melhoria de nossos serviços.
+
+Sempre que precisar, estamos prontos para auxiliar!
+
+Atenciosamente,
+
+Samsung Eletrônica da Amazônia LTDA.
+Serviço de Atendimento ao Consumidor.
+http://www.samsung.com/br/info/contactus.html
+```
+
+Senti um completo descaso com o e-mail que enviei originalmente, parece que não se deram o trabalho de fazer uma leitura e entender o caso...
+
+Não é o primeiro e nem o único produto da Samsung que possuo, mas depois deste atendimento e do péssimo aparelho que
+está sendo vendido nas lojas - não muito barato, diga-se de passagem -, espero que seja o último.
+
+Fica aqui, o sentimento de ter jogado o dinheiro e meu tempo no lixo.
+
+Obrigado Samsung!
