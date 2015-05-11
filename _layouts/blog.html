@@ -57,20 +57,6 @@
     </header>
     <!--end: Header-->
 
-    {% if page.title %}
-    	<!-- start: Page Title -->
-    	<div id="page-title">
-    	    <div id="page-title-inner">
-    	        <!-- start: Container -->
-    	        <div class="container">
-    	            <h2>{{ page.title }}</h2>
-    	        </div>
-    	        <!-- end: Container  -->
-    	    </div>
-    	</div>
-    	<!-- end: Page Title -->
-    {% endif %}
-
 	<!--start: Wrapper-->
 	<div id="wrapper">
 	    <!--start: Container -->
@@ -78,11 +64,28 @@
 	        <!--start: Row -->
 	        <div class="row">
 	            <div class="span9">
-	                {{ content }}
-
-                    {% if page.comments %}
-                        <div id="disqus_thread"></div>
-                        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+	                {% if page.comments %}
+                		<!-- start: Post -->
+                		<div class="post">
+                			<span class="post-icon standard"><i class="ico-pen circle"></i></span>
+                			<div class="post-content">
+                				<div class="post-title">
+                					<h2><a href="{{ post.url | prepend: site.baseurl }}">{{ page.title }}</a></h2>
+                				</div>
+                				<div class="post-description">
+                					{{ page.content | markdownify }}
+                				</div>
+                				<div class="post-meta">
+                					<span><i class="mini-ico-calendar"></i>{{ page.date | date_to_string }}</span>
+                					<span><i class="mini-ico-user"></i>Por <a href="#">{{ page.author }}</a></span>
+                				</div>
+		                        <div id="disqus_thread"></div>
+                                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                			</div>
+                		</div>
+                		<!-- end: Post -->
+                    {% else %}
+                        {{ content }}
                     {% endif %}
 	            </div>
 
