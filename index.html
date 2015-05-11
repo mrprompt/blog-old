@@ -3,7 +3,7 @@ layout: blog
 slug: index
 ---
 
-{% for post in site.posts limit:5 %}
+{% for post in site.posts limit:3 %}
 	{% capture year %}{{post.date | date: "%Y"}}{% endcapture %}
 
 	{% if year == "2015" %}
