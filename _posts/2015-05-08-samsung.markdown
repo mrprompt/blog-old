@@ -2,7 +2,7 @@
 layout: blog
 author: mrprompt
 comments: true
-date: 2015-04-29 12:52:45+00:00
+date: 2015-05-08 12:52:45+00:00
 slug: samsung
 title: Porque NÃO comprar um Samsung Galaxy Gran Prime Duos
 ---
