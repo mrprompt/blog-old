@@ -16,10 +16,12 @@ facilitar nossa vida, não é mesmo?
 Então, vamos direto ao ponto.
 
 Começamos instalando as bibliotecas necessárias, adicionando as linhas no composer.json do projeto:
+
 ```
     "symfony/yaml": "~2.6",
     "symfony/config": "~2.6"
 ```
+
 Pronto, isso é tudo que precisamos para trabalhar com as rotas.
 Agora, vamos fazer a leitura dos arquivos com as nossas rotas definidas:
 
@@ -48,6 +50,7 @@ $app['routes'] = $app->extend(
 ```
 
 O arquivo de rotas (routes/routes.yml)
+
 ```
 # album route
 album:
@@ -57,6 +60,7 @@ album:
 ```
 
 E um exemplo de rotas (routes/album.yml):
+
 ```
 # album route
 album.home:
@@ -90,4 +94,5 @@ album.delete:
     requirements:
       id: \d+
 ```
+
 E está feito, agora é só ir criando duas rotas direto no YAML respectivo. ;)
