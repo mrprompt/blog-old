@@ -18,8 +18,7 @@ Então, vamos direto ao ponto.
 Começamos instalando as bibliotecas necessárias, adicionando as linhas no composer.json do projeto:
 
 ```
-    "symfony/yaml": "~2.6",
-    "symfony/config": "~2.6"
+composer require symfony/yaml:~2.6 symfony/config:~2.6
 ```
 
 Pronto, isso é tudo que precisamos para trabalhar com as rotas.
