@@ -1,10 +1,10 @@
 # Site settings
-title: mrprompt
+title: Thiago Paes - Blog Pessoal
 email: mrprompt@gmail.com
-description: blog do desenvolvedor web Thiago Paes - mrprompt
+description: Blog pessoal do desenvolvedor web Thiago Paes - MrPrompt
 
 # Build settings
-name: Thiago mrprompt Paes - Blog Pessoal
+name: Thiago Paes - Blog Pessoal
 markdown: redcarpet
 highlighter: pygments
 timezone: America/Sao_Paulo
