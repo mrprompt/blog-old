@@ -96,10 +96,11 @@ class Bootstrap extends PHPUnit_Framework_BaseTestListener
 }
 ```
 
-É importante utilizarmos o *require_once*, para que nosso bootstrap rode apenas
-uma única vez.
+Foi importante utilizar o *require_once*, para que o bootstrap rodasse apenas
+uma única vez, que era o que eu queria.
 
-Então, o meu script para popular minha base rodando sempre minhas fixtures
+Abaixo, o **phpunit-bootstrap.php**, que chama meu **bootstrap** da aplicação e
+carrega as fixtures para a suíte:
 
 ```
 <?php
@@ -135,8 +136,10 @@ $executor->execute($loader->getFixtures());
 fputs(STDOUT, 'OK!' . PHP_EOL);
 
 return $app;
-
 ```
+
+E pronto, agora, basta rodar os testes normalmente, e as fixtures são utilizadas
+somente no módulo que preciso.
 
 Mais informações:
 
