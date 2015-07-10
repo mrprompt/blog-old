@@ -10,3 +10,5 @@ highlighter: pygments
 timezone: America/Sao_Paulo
 permalink: pretty
 url: http://www.mrprompt.com.br
+paginate: 3
+pagination_path: "/:num"
