@@ -208,7 +208,7 @@ a {
 =================================================================== */
 	
 header {
-	margin-top: 30px;
+	margin-top: 10px;
 	background: rgba(255,255,255,0.9);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6ffffff', endColorstr='#e6ffffff',GradientType=0 ); /* IE6-8 */
 	position: relative;
@@ -231,7 +231,7 @@ header {
 
 .brand > img {
 	/*width: 130px;*/
-	height: 80px;
+	height: 60px;
 	position: relative;
 	/*top: -25px;*/
 }
