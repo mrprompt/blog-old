@@ -2,7 +2,6 @@
 layout: blog
 slug: index
 ---
-
 {% for post in paginator.posts %}
 	{% capture year %}{{post.date | date: "%Y"}}{% endcapture %}
 

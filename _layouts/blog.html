@@ -47,6 +47,12 @@
                         <img src="/img/mrprompt-logo.png" alt="">
                         <span><i class="ico-thin-right-arrow ico-color circle"></i> mr<span>prompt</span></span>
                     </a>
+                    <div class="nav-collapse collapse">
+	            		<ul class="nav">
+							<li class="{% if page.slug == 'index' %} active {% endif %}"><a href="/">Início</a></li>
+	              			<li class="{% if page.slug == 'contato' %} active {% endif %}"><a href="/contato/">Contato</a></li>
+	            		</ul>
+	          		</div>
                 </div>
             </div>
             <!--end: Navigation -->
@@ -198,6 +204,7 @@
     </script>
     <!-- end analytics -->
 
+    {% if page.comments %}
     <!-- start disqus -->
     <script>
         var disqus_shortname = 'blogdomrprompt';
@@ -209,6 +216,7 @@
         })();
     </script>
     <!-- end disqus -->
+    {% endif %}
     <!-- end: Java Script -->
 </body>
 </html>
