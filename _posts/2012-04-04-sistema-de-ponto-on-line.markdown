@@ -3,18 +3,8 @@ layout: blog
 author: mrprompt
 comments: true
 date: 2012-04-04 03:00:00+00:00
-layout: blog
 slug: sistema-de-ponto-on-line
 title: Sistema de Ponto On Line
-wordpress_id: 14
-categories:
-- html5
-- javascript
-- jquery
-- jquery-ui
-- ponto
-- software livre
-- sqlite
 ---
 
 A tempos venho escrevendo software pra todo mundo, vários freelas e empresas que já passei, e raramente, tenho a oportunidade/idéia de escrever um software um pouco mais robusto por necessidade própria. Geralmente, escrevo pequenos scripts em PHP-Cli ou Bash mesmo, para automatizar pequenas tarefas, como armazenamento de senhas pessoais, todo list, ponto e etc.

@@ -3,15 +3,8 @@ layout: blog
 author: mrprompt
 comments: true
 date: 2008-05-07 03:27:00+00:00
-layout: blog
 slug: netbeans-ide-early-access-for-php
 title: NetBeans IDE Early Access for PHP
-wordpress_id: 25
-categories:
-- IDE
-- linux
-- NetBeans
-- php
 ---
 
 [![](http://4.bp.blogspot.com/_nhKbx850xAI/TO832pxYS-I/AAAAAAAAOR0/N02rSV3oFPo/s320/screenshot.png)](http://4.bp.blogspot.com/_nhKbx850xAI/TO832pxYS-I/AAAAAAAAOR0/N02rSV3oFPo/s1600/screenshot.png)

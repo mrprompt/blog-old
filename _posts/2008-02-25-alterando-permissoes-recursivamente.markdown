@@ -3,16 +3,8 @@ layout: blog
 author: mrprompt
 comments: true
 date: 2008-02-25 04:23:00+00:00
-layout: blog
 slug: alterando-permissoes-recursivamente
 title: Alterando permissões recursivamente
-wordpress_id: 28
-categories:
-- chmod
-- find
-- linux
-- permissões
-- recursividade
 ---
 
 Dia de folga é sempre muito legal, e nerd que é nerd, pega o dia de folga: PARA ORGANIZAR O HD!!! hahahahah

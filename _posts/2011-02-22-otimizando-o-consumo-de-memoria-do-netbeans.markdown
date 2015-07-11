@@ -3,14 +3,8 @@ layout: blog
 author: mrprompt
 comments: true
 date: 2011-02-22 22:59:00+00:00
-layout: blog
 slug: otimizando-o-consumo-de-memoria-do-netbeans
 title: Otimizando o consumo de memória do NetBeans
-wordpress_id: 16
-categories:
-- memória
-- NetBeans
-- performance
 ---
 
 Outro dia, aborrecido com o alto consumo de memória do NetBeans no meu Netbook, resolvi procurar informações a respeito de otimizações (sim, eu sou um baita fominha quando se trata de espaço em disco e memória, acho que culpa de sempre ter usado máquinas podreiras).

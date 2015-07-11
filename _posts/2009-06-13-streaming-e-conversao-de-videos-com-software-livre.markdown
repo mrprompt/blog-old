@@ -3,18 +3,8 @@ layout: blog
 author: mrprompt
 comments: true
 date: 2009-06-13 03:32:00+00:00
-layout: blog
 slug: streaming-e-conversao-de-videos-com-software-livre
 title: Streaming e conversão de vídeos com Software Livre
-wordpress_id: 22
-categories:
-- conversão
-- linux
-- software livre
-- streaming
-- ubuntu
-- vídeos
-- wget
 ---
 
 Iniciando Para instalar o ffmpeg no Ubuntu, temos duas maneiras, a primeira, é compilando o mesmo, assim você dar uma refinada nos formatos que deseja dar suporte e ganha um software mais personalizado, ganhando assim em desempenho.

@@ -3,17 +3,8 @@ layout: blog
 author: mrprompt
 comments: true
 date: 2011-01-22 15:59:00+00:00
-layout: blog
 slug: utilizando-rotas-com-zend-framework
 title: Utilizando Rotas com Zend Framework
-wordpress_id: 18
-categories:
-- framework
-- php
-- rotas
-- route
-- zend
-- zf
 ---
 
 As vezes, é importante definir algumas urls mais amistosas para sua aplicação, ao invés de deixar o padrão _"controller/action/nomeparametro/valorparametro"_, isso as vezes pode confundir, além de ficar feio para um site por exemplo.

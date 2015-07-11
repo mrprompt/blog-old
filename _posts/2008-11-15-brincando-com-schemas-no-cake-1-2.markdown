@@ -3,18 +3,8 @@ layout: blog
 author: mrprompt
 comments: true
 date: 2008-11-15 04:24:00+00:00
-layout: blog
 slug: brincando-com-schemas-no-cake-1-2
 title: Brincando com schemas no Cake 1.2
-wordpress_id: 23
-categories:
-- banco de dados
-- cake
-- cakephp
-- db
-- php
-- schema
-- sql
 ---
 
 Introdução Eu pessoalmente, gosto de brincar em meus projetos com dois bancos, o MySQL e o SQLite, esse segundo, eu gosto muito pela leveza e praticidade, já que fica em um arquivo só, além de ser extremamente rápido.
