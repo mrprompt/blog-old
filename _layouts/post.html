@@ -9,7 +9,6 @@
                 <div class="span9">
             		<!-- start: Post -->
             		<div class="post">
-            			<span class="post-icon standard"><i class="ico-pen circle"></i></span>
             			<div class="post-content">
             				<div class="post-title">
             					<h2><a href="{{ post.url | prepend: site.baseurl }}">{{ page.title }}</a></h2>
@@ -19,10 +18,8 @@
         					</div>
             				<div class="post-meta">
             					<span><i class="mini-ico-calendar"></i>{{ page.date | date_to_string }}</span>
-            					<span><i class="mini-ico-user"></i>Por <a href="#">{{ page.author }}</a></span>
             				</div>
                             <div id="disqus_thread"></div>
-                            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
             			</div>
             		</div>
             		<!-- end: Post -->

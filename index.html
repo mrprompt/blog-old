@@ -9,79 +9,55 @@ slug: index
             <!--start: Row -->
             <div class="row">
                 <div class="span9">
-                    {% if page.comments %}
-                		<!-- start: Post -->
-                		<div class="post">
-                			<span class="post-icon standard"><i class="ico-pen circle"></i></span>
-                			<div class="post-content">
-                				<div class="post-title">
-                					<h2><a href="{{ post.url | prepend: site.baseurl }}">{{ page.title }}</a></h2>
-                				</div>
-                				<div class="post-description">
-                					{{ page.content | markdownify }}
-            					</div>
-                				<div class="post-meta">
-                					<span><i class="mini-ico-calendar"></i>{{ page.date | date_to_string }}</span>
-                					<span><i class="mini-ico-user"></i>Por <a href="#">{{ page.author }}</a></span>
-                				</div>
-                                <div id="disqus_thread"></div>
-                                <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                			</div>
-                		</div>
-                		<!-- end: Post -->
-                    {% else %}
-            			{% for post in paginator.posts %}
-            			<!-- start: Post -->
-            			<div class="post">
-            				<span class="post-icon standard"><i class="ico-pen circle"></i></span>
-            				<div class="post-content">
-            					<div class="post-title">
-            						<h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-            					</div>
-            					<div class="post-description">
-            						{{ post.content }}
-            					</div>
-            					<div class="post-meta">
-            						<span><i class="mini-ico-calendar"></i>{{ post.date | date_to_string }}</span>
-            						<span><i class="mini-ico-user"></i>Por <a href="#">{{ post.author }}</a></span>
-            					</div>
-            				</div>
-            			</div>
-            			<!-- end: Post -->
-            			{% endfor %}
-            			
-            			{% if paginator.total_pages > 1 %}
-            			<ul class="pagination">
-            				<li>
-            				  {% if paginator.previous_page %}
-            				    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a>
-            				  {% else %}
-            				    <span>&laquo;</span>
-            				  {% endif %}
-            				</li>
-            			
-            			  {% for page in (1..paginator.total_pages) %}
-            			  	<li>
-            				    {% if page == paginator.page %}
-            				      <em>{{ page }}</em>
-            				    {% elsif page == 1 %}
-            				      <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-            				    {% else %}
-            				      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-            				    {% endif %}
-            				</li>
-            			  {% endfor %}
-            			
-            			  <li>
-            				  {% if paginator.next_page %}
-            				    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a>
-            				  {% else %}
-            				    <span>&raquo;</span>
-            				  {% endif %}
-            			  </li>
-            			</ul>
-            			{% endif %}
-                    {% endif %}
+        			{% for post in paginator.posts %}
+        			<!-- start: Post -->
+        			<div class="post">
+        				<div class="post-content">
+        					<div class="post-title">
+        						<h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+        					</div>
+        					<div class="post-description">
+        						{{ post.content }}
+        					</div>
+        					<div class="post-meta">
+        						<span><i class="mini-ico-calendar"></i>{{ post.date | date_to_string }}</span>
+        					</div>
+        				</div>
+        			</div>
+        			<!-- end: Post -->
+        			{% endfor %}
+        			
+        			{% if paginator.total_pages > 1 %}
+        			<ul class="pagination">
+        				<li>
+        				  {% if paginator.previous_page %}
+        				    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a>
+        				  {% else %}
+        				    <span>&laquo;</span>
+        				  {% endif %}
+        				</li>
+        			
+        			  {% for page in (1..paginator.total_pages) %}
+        			  	<li>
+        				    {% if page == paginator.page %}
+        				      <em>{{ page }}</em>
+        				    {% elsif page == 1 %}
+        				      <a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+        				    {% else %}
+        				      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+        				    {% endif %}
+        				</li>
+        			  {% endfor %}
+        			
+        			  <li>
+        				  {% if paginator.next_page %}
+        				    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a>
+        				  {% else %}
+        				    <span>&raquo;</span>
+        				  {% endif %}
+        			  </li>
+        			</ul>
+        			{% endif %}
                 </div>
             
                 <!-- start: Sidebar -->
