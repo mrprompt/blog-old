@@ -1,0 +1,88 @@
+{% include head.html %}
+
+<!--start: Wrapper-->
+<div id="wrapper">
+	<!--start: Container -->
+	<div class="container">
+            <!--start: Row -->
+            <div class="row">
+                <div class="span9">
+            		<!-- start: Post -->
+            		<div class="post">
+            			<span class="post-icon standard"><i class="ico-pen circle"></i></span>
+            			<div class="post-content">
+            				<div class="post-title">
+            					<h2><a href="{{ post.url | prepend: site.baseurl }}">{{ page.title }}</a></h2>
+            				</div>
+            				<div class="post-description">
+            					{{ page.content | markdownify }}
+        					</div>
+            				<div class="post-meta">
+            					<span><i class="mini-ico-calendar"></i>{{ page.date | date_to_string }}</span>
+            					<span><i class="mini-ico-user"></i>Por <a href="#">{{ page.author }}</a></span>
+            				</div>
+                            <div id="disqus_thread"></div>
+                            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            			</div>
+            		</div>
+            		<!-- end: Post -->
+                </div>
+            
+                <!-- start: Sidebar -->
+                <div class="span3">
+                    <!-- start: Text Widget -->
+                    <div class="widget first">
+                        <div class="title">
+                            <h3>Sobre o autor</h3>
+                        </div>
+                        
+                        <img src="http://www.gravatar.com/avatar/893dc25648d3020f0fa12d449282bc71?s=200" class="thumbnail img img-polaroid" alt="me">
+                        
+                        <p>
+                            Meu nome é Thiago Paes, também sou conhecido como <b>mrprompt</b>,
+                            sou evangelista do PHP e do Software Livre.
+                        </p>
+                        <p>
+                            <a href="http://www.zend.com/en/yellow-pages/ZEND022815" class="pull-right" target="_blank">
+                                <img src="/img/zce-logo.jpg">
+                            </a>
+                            Sou ZCPE e afficionado por código bem escrito, performance e padrões,
+                            não necessiariamente nesta mesma ordem.
+                        </p>
+                        
+                        <hr>
+            
+                        <div class="title">
+                            <h3>Outros posts</h3>
+                        </div>
+                        <ul class="posts">
+                          {% for post in site.posts limit:15 %}
+                            {% capture year %}{{post.date | date: "%Y"}}{% endcapture %}
+            
+                            {% if year == "2015" %}
+                                <li>
+                                  <span><i class="mini-ico-calendar"></i>{{ post.date | date_to_string }}</span> <br>
+                                  <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                                </li>
+                            {% endif %}
+                          {% endfor %}
+                        </ul>
+            
+                        <hr>
+            
+                        <span class="text-center">
+                            <a href="{{ site.baseurl }}/posts/" class="btn btn-large btn-primary">Todos os posts</a>
+                            <a href="http://feeds.feedburner.com/ThiagoPaes" class="pull-right" title="Assine o Feed"><i class="ico-color ico-announcement"></i><span class="hidden">RSS</span></a>
+                        </span>
+                    </div>
+                    <!-- end: Text Widget -->
+                </div>
+                <!-- end: Sidebar -->
+            </div>
+            <!--end: Row -->
+    </div>
+	<!--end: Container-->
+</div>
+<!-- end: Wrapper  -->			
+
+{% include footer.html %}
