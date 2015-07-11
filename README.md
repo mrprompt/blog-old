@@ -1,6 +1,6 @@
 mrprompt.github.io
 ==================
 
-Blog pessoal
+Site pessoal e blog.
 
-* layout comprado no wrapbootstrap *
+Template (Magnus Responsive Business Template)[https://wrapbootstrap.com/theme/magnus-responsive-business-template-WB0C44S9M]
