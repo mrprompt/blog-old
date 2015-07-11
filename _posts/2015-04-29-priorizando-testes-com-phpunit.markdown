@@ -1,6 +1,6 @@
 ---
-layout: blog
-author: mrprompt
+layout: post
+author: Thiago Paes
 comments: true
 date: 2015-04-29 12:52:45+00:00
 slug: priorizando-testes-com-phpunit

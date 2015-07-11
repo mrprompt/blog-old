@@ -1,6 +1,6 @@
 ---
-layout: blog
-author: mrprompt
+layout: post
+author: Thiago Paes
 comments: true
 date: 2011-01-21 12:48:00+00:00
 slug: trabalhando-com-imagens-utilizando-a-biblioteca-imagick

@@ -1,6 +1,6 @@
 ---
-layout: blog
-author: mrprompt
+layout: post
+author: Thiago Paes
 comments: true
 date: 2013-08-16 05:39:00+00:00
 slug: melhorando-a-completacao-de-codigo-auto-complete-do-netbeans

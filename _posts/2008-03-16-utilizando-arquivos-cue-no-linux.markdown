@@ -1,6 +1,6 @@
 ---
-layout: blog
-author: mrprompt
+layout: post
+author: Thiago Paes
 comments: true
 date: 2008-03-16 03:32:00+00:00
 slug: utilizando-arquivos-cue-no-linux

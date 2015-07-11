@@ -1,6 +1,6 @@
 ---
-layout: blog
-author: mrprompt
+layout: post
+author: Thiago Paes
 comments: true
 date: 2007-09-22 03:25:00+00:00
 slug: desenvolvendo-em-php-com-o-eclipse

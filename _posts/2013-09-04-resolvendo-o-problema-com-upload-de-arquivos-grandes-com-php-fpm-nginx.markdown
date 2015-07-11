@@ -1,6 +1,6 @@
 ---
-layout: blog
-author: mrprompt
+layout: post
+author: Thiago Paes
 comments: true
 date: 2013-09-04 02:49:00+00:00
 slug: resolvendo-o-problema-com-upload-de-arquivos-grandes-no-nginx

@@ -1,6 +1,6 @@
 ---
-layout: blog
-author: mrprompt
+layout: post
+author: Thiago Paes
 comments: true
 date: 2008-04-22 03:24:00+00:00
 slug: backup-incremental-simples-e-indolor

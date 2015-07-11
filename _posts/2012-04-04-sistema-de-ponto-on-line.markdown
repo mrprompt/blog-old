@@ -1,6 +1,6 @@
 ---
-layout: blog
-author: mrprompt
+layout: post
+author: Thiago Paes
 comments: true
 date: 2012-04-04 03:00:00+00:00
 slug: sistema-de-ponto-on-line

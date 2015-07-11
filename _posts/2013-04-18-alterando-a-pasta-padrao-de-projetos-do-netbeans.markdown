@@ -1,6 +1,6 @@
 ---
-layout: blog
-author: mrprompt
+layout: post
+author: Thiago Paes
 comments: true
 date: 2013-04-18 19:33:00+00:00
 slug: alterando-a-pasta-padrao-de-projetos-do-netbeans

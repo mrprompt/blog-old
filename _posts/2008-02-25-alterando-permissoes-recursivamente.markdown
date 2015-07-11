@@ -1,6 +1,6 @@
 ---
-layout: blog
-author: mrprompt
+layout: post
+author: Thiago Paes
 comments: true
 date: 2008-02-25 04:23:00+00:00
 slug: alterando-permissoes-recursivamente

@@ -1,6 +1,6 @@
 ---
-layout: blog
-author: mrprompt
+layout: post
+author: Thiago Paes
 comments: true
 date: 2011-01-25 22:58:00+00:00
 slug: enviando-e-mails-via-gmail-com-zend_mail

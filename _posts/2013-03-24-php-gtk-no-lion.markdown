@@ -1,6 +1,6 @@
 ---
-layout: blog
-author: mrprompt
+layout: post
+author: Thiago Paes
 comments: true
 date: 2013-03-24 09:19:00+00:00
 slug: php-gtk-no-lion

@@ -1,6 +1,6 @@
 ---
-layout: blog
-author: mrprompt
+layout: post
+author: Thiago Paes
 comments: true
 date: 2015-04-28 18:16:45+00:00
 slug: rodando-testes-unitarios-em-paralelo

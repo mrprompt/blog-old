@@ -1,6 +1,6 @@
 ---
-layout: blog
-author: mrprompt
+layout: post
+author: Thiago Paes
 comments: true
 date: 2011-01-22 15:59:00+00:00
 slug: utilizando-rotas-com-zend-framework

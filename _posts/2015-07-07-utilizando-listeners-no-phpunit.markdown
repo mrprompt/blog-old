@@ -1,6 +1,6 @@
 ---
-layout: blog
-author: mrprompt
+layout: post
+author: Thiago Paes
 comments: true
 date: 2015-07-07 15:00:00+00:00
 slug: utilizando-listeners-no-phpunit

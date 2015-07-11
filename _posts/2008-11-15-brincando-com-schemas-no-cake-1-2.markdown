@@ -1,6 +1,6 @@
 ---
-layout: blog
-author: mrprompt
+layout: post
+author: Thiago Paes
 comments: true
 date: 2008-11-15 04:24:00+00:00
 slug: brincando-com-schemas-no-cake-1-2

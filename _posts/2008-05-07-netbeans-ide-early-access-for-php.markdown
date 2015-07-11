@@ -1,6 +1,6 @@
 ---
-layout: blog
-author: mrprompt
+layout: post
+author: Thiago Paes
 comments: true
 date: 2008-05-07 03:27:00+00:00
 slug: netbeans-ide-early-access-for-php

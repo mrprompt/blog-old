@@ -1,6 +1,6 @@
 ---
-layout: blog
-author: mrprompt
+layout: post
+author: Thiago Paes
 comments: true
 date: 2015-02-02 16:40:00+00:00
 slug: utilizando-o-chromebook-para-desenvolvimento

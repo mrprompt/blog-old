@@ -1,6 +1,6 @@
 ---
-layout: blog
-author: mrprompt
+layout: post
+author: Thiago Paes
 comments: true
 date: 2015-06-28 15:05:00+00:00
 slug: rotas-simples-com-silex

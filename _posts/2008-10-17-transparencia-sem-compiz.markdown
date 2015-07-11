@@ -1,6 +1,6 @@
 ---
-layout: blog
-author: mrprompt
+layout: post
+author: Thiago Paes
 comments: true
 date: 2008-10-17 03:31:00+00:00
 slug: transparencia-sem-compiz

@@ -1,6 +1,6 @@
 ---
-layout: blog
-author: mrprompt
+layout: post
+author: Thiago Paes
 comments: true
 date: 2011-02-22 22:59:00+00:00
 slug: otimizando-o-consumo-de-memoria-do-netbeans

@@ -1,6 +1,6 @@
 ---
-layout: blog
-author: mrprompt
+layout: post
+author: Thiago Paes
 comments: true
 date: 2009-07-25 03:31:00+00:00
 slug: ubuntu-voando-com-openbox

@@ -1,6 +1,6 @@
 ---
-layout: blog
-author: mrprompt
+layout: post
+author: Thiago Paes
 comments: true
 date: 2009-06-13 03:32:00+00:00
 slug: streaming-e-conversao-de-videos-com-software-livre

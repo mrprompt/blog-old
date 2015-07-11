@@ -1,6 +1,6 @@
 ---
-layout: blog
-author: mrprompt
+layout: post
+author: Thiago Paes
 comments: true
 date: 2012-04-08 09:43:00+00:00
 slug: brincando-com-yql-yahoo-query-language
