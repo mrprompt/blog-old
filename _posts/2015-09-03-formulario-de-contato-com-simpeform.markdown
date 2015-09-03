@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: post
 author: mrprompt
 comments: true
 date: 2015-09-03 13:00:00+00:00
