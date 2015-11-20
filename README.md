@@ -1,6 +1,6 @@
-mrprompt.github.io
-==================
+Blog
+====
 
 Site pessoal e blog.
 
-Template (Magnus Responsive Business Template)[https://wrapbootstrap.com/theme/magnus-responsive-business-template-WB0C44S9M]
+Template [Magnus Responsive Business Template](https://wrapbootstrap.com/theme/magnus-responsive-business-template-WB0C44S9M)
