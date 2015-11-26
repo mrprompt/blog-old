@@ -1,13 +1,22 @@
 # Site settings
 title: Thiago Paes - Blog Pessoal
 description: Blog pessoal do desenvolvedor web Thiago Paes - mrprompt
+url: http://www.mrprompt.com.br
 
 # Build settings
-name: Thiago Paes - Blog Pessoal
 markdown: redcarpet
 highlighter: pygments
 timezone: America/Sao_Paulo
 permalink: pretty
-url: http://www.mrprompt.com.br
+
+# Pagination
 paginate: 3
 pagination_path: "/:num"
+
+# Plugins
+gems:
+  - jekyll-sitemap
+  - jekyll-paginate
+
+sass:
+  style: compressed
