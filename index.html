@@ -2,84 +2,114 @@
 layout: blog
 slug: index
 ---
-<!--start: Wrapper-->
-<div id="wrapper">
-	<!--start: Container -->
-	<div class="container">
-		<div class="row">
-			<h2>Textos</h2>
+<!--start: Container -->
+<div class="container">
+	<h2>Thiago Paes - mrprompt</h2>
 
-			{% for post in paginator.posts %}
-			<!-- start: Post -->
+	<div class="row">
+		<div class="col-lg-2">
+			<img src="http://www.gravatar.com/avatar/893dc25648d3020f0fa12d449282bc71?s=200" class="thumbnail img img-polaroid img-responsive" alt="me">
+		</div>
+
+		<div class="col-lg-4">
+			<p>
+				Meu nome é Thiago Paes, também sou conhecido como <b>mrprompt</b>,
+				sou evangelista do PHP e do Software Livre.
+			</p>
+			<p>
+				Sou ZCPE e aficionado por código bem escrito, performance e padrões, não necessiariamente nesta mesma ordem.
+			</p>
+		</div>
+
+		<div class="col-lg-1">
+			<a href="http://www.zend.com/en/yellow-pages/ZEND022815" target="_blank">
+				<img src="/img/zce-logo.jpg">
+			</a>
+		</div>
+
+		<div class="col-lg-2">
+			<ul class="list-unstyled">
+				<li><a href="https://github.com/mrprompt"><i class="fa fa-github"></i> github</a></li>
+				<li><a href="https://bitbucket.org/mrprompt/"><i class="fa fa-bitbucket"></i> bitbucket</a></li>
+				<li><a href="http://facebook.com/mrprompt"><i class="fa fa-facebook-official"></i> facebook</a></li>
+				<li><a href="http://br.linkedin.com/in/paesthiago/pt"><i class="fa fa-linkedin"></i> linkedin</a></li>
+				<li><a href="http://pt.slideshare.net/mrprompt"><i class="fa fa-slideshare"></i> slideshare</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="row">
+		<h3>Textos</h3>
+
+		{% for post in paginator.posts %}
+		<!-- start: Post -->
+		<div class="col-md-4">
+			<div class="post-content">
+				<div class="post-title">
+					<h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+				</div>
+				<div class="post-description">
+					{{ post.excerpt | strip_html }}
+				</div>
+				<div class="post-meta">
+					<span><i class="mini-ico-calendar"></i>{{ post.date | date_to_string }}</span>
+				</div>
+			</div>
+		</div>
+		<!-- end: Post -->
+		{% endfor %}
+	</div>
+
+	<div class="row">
+		<ul class="pagination">
+			<li>
+				{% if paginator.previous_page %}
+				<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a>
+				{% else %}
+				<span>&laquo;</span>
+				{% endif %}
+			</li>
+
+			{% for page in (1..paginator.total_pages) %}
+			<li>
+				{% if page == paginator.page %}
+				<a href="#">{{ page }}</a>
+				{% elsif page == 1 %}
+				<a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+				{% else %}
+				<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+				{% endif %}
+			</li>
+			{% endfor %}
+
+			<li>
+				{% if paginator.next_page %}
+				<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a>
+				{% else %}
+				<span>&raquo;</span>
+				{% endif %}
+			</li>
+		</ul>
+	</div>
+
+	<div class="row">
+		<h3>Projetos</h3>
+
+		{% for repository in site.github.public_repositories %}
 			<div class="col-md-4">
 				<div class="post-content">
 					<div class="post-title">
-						<h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+						<h2><a href="{{ repository.html_url }}">{{ repository.name }}</a></h2>
 					</div>
 					<div class="post-description">
-						{{ post.excerpt | strip_html }}
+						{{ repository.description }}
 					</div>
 					<div class="post-meta">
-						<span><i class="mini-ico-calendar"></i>{{ post.date | date_to_string }}</span>
+						<span>{{ repository.full_name }}</span>
 					</div>
 				</div>
 			</div>
-			<!-- end: Post -->
-			{% endfor %}
-		</div>
-
-		<div class="row">
-			<ul class="pagination">
-				<li>
-					{% if paginator.previous_page %}
-					<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a>
-					{% else %}
-					<span>&laquo;</span>
-					{% endif %}
-				</li>
-
-				{% for page in (1..paginator.total_pages) %}
-				<li>
-					{% if page == paginator.page %}
-					<a href="#">{{ page }}</a>
-					{% elsif page == 1 %}
-					<a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-					{% else %}
-					<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-					{% endif %}
-				</li>
-				{% endfor %}
-
-				<li>
-					{% if paginator.next_page %}
-					<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a>
-					{% else %}
-					<span>&raquo;</span>
-					{% endif %}
-				</li>
-			</ul>
-		</div>
-
-		<div class="row">
-			<h2>Projetos</h2>
-
-			{% for repository in site.github.public_repositories %}
-				<div class="col-md-4">
-					<div class="post-content">
-						<div class="post-title">
-							<h2><a href="{{ repository.html_url }}">{{ repository.name }}</a></h2>
-						</div>
-						<div class="post-description">
-							{{ repository.description }}
-						</div>
-						<div class="post-meta">
-							<span>{{ repository.full_name }}</span>
-						</div>
-					</div>
-				</div>
-			{% endfor %}
-		</div>
-    </div>
-	<!--end: Container-->
+		{% endfor %}
+	</div>
 </div>
-<!-- end: Wrapper  -->			
+<!--end: Container-->

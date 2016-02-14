@@ -1,40 +1,27 @@
 {% include head.html %}
 
-<!--start: Wrapper-->
-<div id="wrapper">
-	<!--start: Container -->
-	<div class="container">
-            <!--start: Row -->
-            <div class="row">
-                <div class="span9">
-            		<!-- start: Post -->
-            		<div class="post">
-            			<div class="post-content">
-            				<div class="post-title">
-            					<h2><a href="{{ post.url | prepend: site.baseurl }}">{{ page.title }}</a></h2>
-            				</div>
-            				<div class="post-description">
-            					{{ page.content | markdownify }}
-        					</div>
-            				<div class="post-meta">
-            					<span><i class="mini-ico-calendar"></i>{{ page.date | date_to_string }}</span>
-            				</div>
-                            <div id="disqus_thread"></div>
-            			</div>
-            		</div>
-            		<!-- end: Post -->
-                </div>
-            
-                <!-- start: Sidebar -->
-                <div class="span3">
-                    {% include sidebar.html %}
-                </div>
-                <!-- end: Sidebar -->
-            </div>
-            <!--end: Row -->
-    </div>
-	<!--end: Container-->
+<div class="container">
+	<!--start: Row -->
+	<div class="row">
+		<!-- start: Post -->
+		<div class="post">
+			<div class="post-content">
+				<div class="post-title">
+					<h2><a href="{{ post.url | prepend: site.baseurl }}">{{ page.title }}</a></h2>
+				</div>
+				<div class="post-description">
+					{{ page.content | markdownify }}
+				</div>
+				<div class="post-meta">
+					<span><i class="mini-ico-calendar"></i>{{ page.date | date_to_string }}</span>
+				</div>
+				<div id="disqus_thread"></div>
+			</div>
+		</div>
+		<!-- end: Post -->
+	</div>
+	<!--end: Row -->
 </div>
-<!-- end: Wrapper  -->			
+<!--end: Container-->
 
 {% include footer.html %}

@@ -4,13 +4,12 @@ description: Blog pessoal do desenvolvedor web Thiago Paes - mrprompt
 url: http://www.mrprompt.com.br
 
 # Build settings
-markdown: redcarpet
-highlighter: pygments
+highlighter: rouge
 timezone: America/Sao_Paulo
 permalink: pretty
 
 # Pagination
-paginate: 6
+paginate: 12
 pagination_path: "/:num"
 
 # Plugins
