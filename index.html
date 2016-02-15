@@ -96,7 +96,7 @@ slug: index
 
 	<div class="row">
 		{% for repository in site.github.public_repositories %}
-			{% if repository.fork == false %}
+			{% if repository.owner == 'mrprompt' %}
 				<div class="col-md-4">
 					<div class="post-content">
 						<div class="post-title">
