@@ -4,14 +4,16 @@ slug: index
 ---
 <!--start: Container -->
 <div class="container">
-	<h2>Thiago Paes - mrprompt</h2>
+	<h2 class="text-center">Thiago Paes - mrprompt</h2>
 
 	<div class="row">
-		<div class="col-lg-2">
-			<img src="http://www.gravatar.com/avatar/893dc25648d3020f0fa12d449282bc71?s=200" class="thumbnail img img-polaroid img-responsive" alt="me">
-		</div>
+		<div class="col-md-6 col-md-offset-3">
+			<figure class="text-center">
+				<img src="http://www.gravatar.com/avatar/893dc25648d3020f0fa12d449282bc71?s=200" class="img img-circle img-thumbnail img-responsive" alt="me">
+			</figure>
 
-		<div class="col-lg-4">
+			<a href="http://www.zend.com/en/yellow-pages/ZEND022815" target="_blank" class="pull-right"><img src="/img/zce-logo.jpg" class="thumbnail img img-polaroid img-responsive pull-left" alt="Zend logo"></a>
+
 			<p>
 				Meu nome é Thiago Paes, também sou conhecido como <b>mrprompt</b>,
 				sou evangelista do PHP e do Software Livre.
@@ -20,27 +22,25 @@ slug: index
 				Sou ZCPE e aficionado por código bem escrito, performance e padrões, não necessiariamente nesta mesma ordem.
 			</p>
 		</div>
+	</div>
 
-		<div class="col-lg-1">
-			<a href="http://www.zend.com/en/yellow-pages/ZEND022815" target="_blank">
-				<img src="/img/zce-logo.jpg">
-			</a>
-		</div>
-
-		<div class="col-lg-2">
-			<ul class="list-unstyled">
-				<li><a href="https://github.com/mrprompt"><i class="fa fa-github"></i> github</a></li>
-				<li><a href="https://bitbucket.org/mrprompt/"><i class="fa fa-bitbucket"></i> bitbucket</a></li>
-				<li><a href="http://facebook.com/mrprompt"><i class="fa fa-facebook-official"></i> facebook</a></li>
-				<li><a href="http://br.linkedin.com/in/paesthiago/pt"><i class="fa fa-linkedin"></i> linkedin</a></li>
-				<li><a href="http://pt.slideshare.net/mrprompt"><i class="fa fa-slideshare"></i> slideshare</a></li>
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2 text-center">
+			<ul class="list-inline">
+				<li><a href="https://github.com/mrprompt" title="GitHub"><i class="fa fa-github fa-3x"></i> <span class="visible-xs">github</span></a></li>
+				<li><a href="https://bitbucket.org/mrprompt/" title="BitBucket"><i class="fa fa-bitbucket fa-3x"></i> <span class="visible-xs">bitbucket</span></a></li>
+				<li><a href="http://pt.slideshare.net/mrprompt" title="Slideshare"><i class="fa fa-slideshare fa-3x"></i> <span class="visible-xs">slideshare</span></a></li>
+				<li><a href="http://facebook.com/mrprompt" title="Facebook"><i class="fa fa-facebook-official fa-3x"></i> <span class="visible-xs">facebook</span></a></li>
+				<li><a href="http://twitter.com/mrprompt" title="Twitter"><i class="fa fa-twitter fa-3x"></i> <span class="visible-xs">twitter</span></a></li>
+				<li><a href="http://br.linkedin.com/in/paesthiago/pt" title="Linkedin"><i class="fa fa-linkedin fa-3x"></i> <span class="visible-xs">linkedin</span></a></li>
+				<li><a href="http://mrprompt.com.br/curriculo/" title="Curriculum Vitae"><i class="fa fa-file-text-o fa-3x"></i> <span class="visible-xs">currículo</span></a></li>
 			</ul>
 		</div>
 	</div>
 
-	<div class="row">
-		<h3>Textos</h3>
+	<h3>Textos</h3>
 
+	<div class="row">
 		{% for post in paginator.posts %}
 		<!-- start: Post -->
 		<div class="col-md-4">
@@ -60,7 +60,7 @@ slug: index
 		{% endfor %}
 	</div>
 
-	<div class="row">
+	<div class="row text-center">
 		<ul class="pagination">
 			<li>
 				{% if paginator.previous_page %}
@@ -92,9 +92,9 @@ slug: index
 		</ul>
 	</div>
 
-	<div class="row">
-		<h3>Projetos</h3>
+	<h3>Projetos</h3>
 
+	<div class="row">
 		{% for repository in site.github.public_repositories %}
 			<div class="col-md-4">
 				<div class="post-content">
