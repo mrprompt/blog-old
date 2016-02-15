@@ -96,19 +96,21 @@ slug: index
 
 	<div class="row">
 		{% for repository in site.github.public_repositories %}
-			<div class="col-md-4">
-				<div class="post-content">
-					<div class="post-title">
-						<h2><a href="{{ repository.html_url }}">{{ repository.name }}</a></h2>
-					</div>
-					<div class="post-description">
-						{{ repository.description }}
-					</div>
-					<div class="post-meta">
-						<span>{{ repository.full_name }}</span>
+			{% if repository.fork == false %}
+				<div class="col-md-4">
+					<div class="post-content">
+						<div class="post-title">
+							<h2><a href="{{ repository.html_url }}">{{ repository.name }}</a></h2>
+						</div>
+						<div class="post-description">
+							{{ repository.description }}
+						</div>
+						<div class="post-meta">
+							<span>{{ repository.full_name }}</span>
+						</div>
 					</div>
 				</div>
-			</div>
+			{% endfor %}
 		{% endfor %}
 	</div>
 </div>
