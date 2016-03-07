@@ -4,8 +4,9 @@ slug: index
 ---
 <!--start: Container -->
 <div class="container">
-	<h2 class="text-center">Thiago Paes - mrprompt</h2>
+	<h2 class="text-center">{{ site.title }}</h2>
 
+	<!-- About me -->
 	<div class="row">
 		<div class="col-md-6 col-md-offset-3">
 			<figure class="text-center">
@@ -23,7 +24,9 @@ slug: index
 			</p>
 		</div>
 	</div>
+	<!-- /About me -->
 
+	<!-- Social links -->
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2 text-center">
 			<ul class="list-inline">
@@ -36,13 +39,13 @@ slug: index
 			</ul>
 		</div>
 	</div>
+	<!-- /Social links -->
 
-	<h3>Textos</h3>
-
+	<!-- Blog Posts -->
 	<div class="row">
 		{% for post in paginator.posts %}
 		<!-- start: Post -->
-		<div class="col-md-4">
+		<article class="col-md-6">
 			<div class="post-content">
 				<div class="post-title">
 					<h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
@@ -51,47 +54,53 @@ slug: index
 					{{ post.excerpt | strip_html }}
 				</div>
 				<div class="post-meta">
-					<span><i class="mini-ico-calendar"></i>{{ post.date | date_to_string }}</span>
+					<span><i class="fa fa-calendar"></i>{{ post.date | date_to_string }}</span>
 				</div>
 			</div>
-		</div>
+		</article>
 		<!-- end: Post -->
 		{% endfor %}
+
+		<hr>
+
+		<!-- start: pagination -->
+		<nav class="col-md-12 text-center">
+			<ul class="pagination">
+				<li>
+					{% if paginator.previous_page %}
+					<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a>
+					{% else %}
+					<span>&laquo;</span>
+					{% endif %}
+				</li>
+
+				{% for page in (1..paginator.total_pages) %}
+				<li>
+					{% if page == paginator.page %}
+					<a href="#">{{ page }}</a>
+					{% elsif page == 1 %}
+					<a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+					{% else %}
+					<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+					{% endif %}
+				</li>
+				{% endfor %}
+
+				<li>
+					{% if paginator.next_page %}
+					<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a>
+					{% else %}
+					<span>&raquo;</span>
+					{% endif %}
+				</li>
+			</ul>
+		</nav>
+		<!-- end: pagination -->
 	</div>
+	<!-- /Blog Posts -->
 
-	<div class="row text-center">
-		<ul class="pagination">
-			<li>
-				{% if paginator.previous_page %}
-				<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo;</a>
-				{% else %}
-				<span>&laquo;</span>
-				{% endif %}
-			</li>
-
-			{% for page in (1..paginator.total_pages) %}
-			<li>
-				{% if page == paginator.page %}
-				<a href="#">{{ page }}</a>
-				{% elsif page == 1 %}
-				<a href="{{ '/index.html' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-				{% else %}
-				<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-				{% endif %}
-			</li>
-			{% endfor %}
-
-			<li>
-				{% if paginator.next_page %}
-				<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">&raquo;</a>
-				{% else %}
-				<span>&raquo;</span>
-				{% endif %}
-			</li>
-		</ul>
-	</div>
-
-	<h3>Projetos</h3>
+	<!-- Open Source Projects -->
+	<h3><i class="fa fa-github"></i> Projetos</h3>
 
 	<div class="row">
 		{% for repository in site.github.public_repositories %}
@@ -114,5 +123,6 @@ slug: index
 			</div>
 		{% endfor %}
 	</div>
+	<!-- /Open Source Projects -->
 </div>
 <!--end: Container-->
