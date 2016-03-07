@@ -101,10 +101,14 @@ slug: index
 						<h2><a href="{{ repository.html_url }}">{{ repository.name }}</a></h2>
 					</div>
 					<div class="post-description">
+						<span class="label label-default">{{ repository.language }}</span> <br>
 						{{ repository.description }}
 					</div>
 					<div class="post-meta">
-						<span>{{ repository.full_name }}</span>
+						<ul class="list-unstyled list-inline">
+							<li><i class="fa fa-star-o"></i> {{ repository.stargazers_count }}</li>
+							<li><i class="fa fa-code-fork"></i> {{ repository.forks_count }}</li>
+						</ul>
 					</div>
 				</div>
 			</div>
