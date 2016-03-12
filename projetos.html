@@ -1,0 +1,35 @@
+---
+layout: blog
+slug: index
+---
+<!--start: Container -->
+<div class="container">
+	<!-- Open Source Projects -->
+	<h2><i class="fa fa-github"></i> Projetos</h2>
+
+	<div class="row">
+		{% for repository in site.github.public_repositories %}
+			<div class="col-md-4">
+				<div class="post-content">
+					<div class="post-title">
+						<h2><a href="{{ repository.html_url }}">{{ repository.name }}</a></h2>
+					</div>
+					<div class="post-description">
+						<span class="label label-default">{{ repository.language }}</span> <br>
+						{{ repository.description }}
+					</div>
+					<div class="post-meta">
+						<ul class="list-unstyled list-inline">
+							<li><i class="fa fa-star-o"></i> {{ repository.stargazers_count }}</li>
+							<li><i class="fa fa-code-fork"></i> {{ repository.forks_count }}</li>
+						</ul>
+					</div>
+				</div>
+
+				<hr>
+			</div>
+		{% endfor %}
+	</div>
+	<!-- /Open Source Projects -->
+</div>
+<!--end: Container-->
