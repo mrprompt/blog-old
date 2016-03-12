@@ -45,16 +45,13 @@ slug: index
 	<div class="row">
 		{% for post in paginator.posts %}
 		<!-- start: Post -->
-		<article class="col-md-6">
-			<div class="post-content">
+		<article class="col-md-3">
+			<div class="post-content" style="min-height: 10em">
 				<div class="post-title">
-					<h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-				</div>
-				<div class="post-description">
-					{{ post.excerpt | strip_html }}
+					<h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
 				</div>
 				<div class="post-meta">
-					<span><i class="fa fa-calendar"></i>{{ post.date | date_to_string }}</span>
+					<span><i class="fa fa-calendar"></i> {{ post.date | date_to_string }}</span>
 				</div>
 			</div>
 		</article>
