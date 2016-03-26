@@ -25,7 +25,7 @@ procurando entregar o máximo de valor, da melhor forma possível.
 Nos primeiros textos dessa série, pretendo focar nas ferramentas de **Integração Contínua** disponíveis 
 hoje na web. Muitas delas, utilizo no meu dia-a-dia, mesmo em projetos que trabalho sozinho, ou pequenos.
 
-![Robô]({{ site.baseurl }}/upload/robo.jpg "Robô de CI")
+<img src="{{ site.baseurl }}/upload/robo.jpg" class="img img-responsive" alt="Robô" title="Robô de CI">
 
 Algumas que das ferramentas que pretendo apresentar são:
 
