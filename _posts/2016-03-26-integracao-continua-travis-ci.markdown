@@ -140,6 +140,9 @@ _[deploy](https://pt.wikipedia.org/wiki/Ambiente_de_desenvolvimento_integrado)_ 
 
 #### <a name="configurando-php"></a> PHP
 
+Abaixo um exemplo básico, de um projeto feito em PHP, testando a compatibilidade com várias versões e permitindo a falha
+do build em versões específicas.
+
 ```
 language: php
 
@@ -166,6 +169,10 @@ script:
 
 #### <a name="configurando-nodejs"></a> Nodejs
 
+Neste exemplo, mostro como faço para rodar um projeto, que utiliza algumas bibliotecas específicas e necessitam de
+configurações adicionais do ambiente para efetuar a instalação das mesmas, como a versão dos compiladores e etc, o
+**Travis-CI** permite essas configurações "obscuras".
+
 ```
 language: node_js
 
@@ -184,6 +191,8 @@ node_js:
 ```
 
 #### <a name="configurando-angularjs"></a> Angularjs
+
+Para os projetos em **Angular**, gosto muito de utilizar o **Protractor** pela sua praticidade de configuração.
 
 ```
 language: node_js
@@ -204,16 +213,20 @@ script:
 
 #### <a name="configurando-ruby"></a> Ruby
 
+Não possuo experiência com Ruby além de minúsculos projetos de exemplo e alguns sites hospedados no **GitHub**, que
+utilizam o **Jekyll** como base. Neste exemplo, mostro como rodar um projeto em **Jekyll** hospedado no próprio
+**GitHub**. Nele, rodo o build do **Jekyll** e o **HtmlProofer**, para analisar links e etc. Porém, rodo somente
+no branch **master** os testes.
+
 ```
 language: ruby
 rvm:
 - 2.1
 
-before_script:
- - chmod +x ./bin/cibuild # or do this locally and commit
-
 # Assume bundler is being used, therefore the `install` step will run `bundle install` by default.
-script: ./bin/cibuild
+script:
+    - bundle exec jekyll build
+    - bundle exec htmlproof --allow-hash-href --disable-external --empty-alt-ignore ./_site
 
 # branch whitelist, only for GitHub Pages
 branches:
@@ -226,6 +239,10 @@ env:
 ```
 
 #### <a name="configurando-java"></a> Java
+
+Não possuo experiência com **Java**, então, o exemplo a seguir eu busquei na documentação do próprio
+**Travis-CI**. Abaixo, a configuração básica de um projeto utilizando o **Ant** e sendo compilado em
+diversas versões do JDK.
 
 ```
 language: java
