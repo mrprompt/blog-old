@@ -9,7 +9,7 @@ title: Integração Contínua com Travis-CI
 O **Travis-CI**, é um dos queridinhos e escolhido por 9 entre cada 10 dentistas, não péra, vamos de novo...
 Senhoras e senhores, apresentando a vocês, o incrível: **Travis-CI**!!!
 
-<img src="{{ site.baseurl }}/upload/travis-ci.svg" class="img img-responsive pull-right" alt="Travis-CI Logo">
+<img src="{{ site.baseurl }}/upload/ci/travis/travis-ci.svg" class="img img-responsive pull-right" alt="Travis-CI Logo">
 
 Um boa parte dos projetos que encontramos no **GitHub**, que possuam um mínimo de testes, utilizam
 o **Travis-CI** como sua principal ferramenta de integração contínua e testes automatizados; isso porque
@@ -36,7 +36,7 @@ Manter um ambiente de testes e integração contínua, é imprescindível para q
 sério, que queira manter sua produtividade em alta e foco na entrega de valor de cada demanda, e não em tarefas
 repetitivas e passíveis de erro.
 
-<img src="{{ site.baseurl }}/upload/travis-ci.png" class="img img-responsive" alt="Travis-CI Screenshot">
+<img src="{{ site.baseurl }}/upload/ci/travis/travis-ci.png" class="img img-responsive" alt="Travis-CI Screenshot">
 
 Com disse, o Travis é o mais escolhido nos projetos open source, justamente pela sua facilidade para
 configurar, quanto para integrar ao CVS utilizado no projeto.
@@ -52,7 +52,7 @@ projeto ;)
 
 O cadastro é simples e rápido, bastando você se logar com sua conta do **GitHub** e logo você cai na Dashboard,
 onde estão seus projetos listados em uma coluna à esquerda e o status detalhado do build do projeto selecionado.
-<img src="{{ site.baseurl }}/upload/shot-travis-dashboard.png" class="img img-responsive" alt="Travis-CI - Dashboard">
+<img src="{{ site.baseurl }}/upload/ci/travis/shot-travis-dashboard.png" class="img img-responsive" alt="Travis-CI - Dashboard">
 
 Caso seja seu primeiro acesso, você não terá nenhum projeto listado, tendo que habilitar na tela de configurações que
 veremos a seguir com detalhes.
@@ -60,7 +60,7 @@ veremos a seguir com detalhes.
 ### <a name="configurando"></a> Configurando
 
 Tão simples quanto o cadastro é a configuração do **Travis-CI** para cada projeto.
-<img src="{{ site.baseurl }}/upload/shot-travis-settings.png" class="img img-responsive" alt="Travis-CI - Settings">
+<img src="{{ site.baseurl }}/upload/ci/travis/shot-travis-settings.png" class="img img-responsive" alt="Travis-CI - Settings">
 
 Nela você pode configurar dentre as variáveis de ambiente - caso seu projeto utilize - se o build ocorrerá somente nos
 "pushs" do projeto ou também sobre cada pull request - ótimo e aconselhável.
@@ -99,7 +99,7 @@ No arquivo você também pode configurar ações para cad etapa do build, são e
 As ações marcadas com "*" são opcionais no arquivo de configuração. Na verdade, você também não é obrigado a configurar todos
 os passos citados ;)
 
-<img src="{{ site.baseurl }}/upload/shot-travis-accounts.png" class="img img-thumbnail pull-right" alt="Travis-CI - Accounts">
+<img src="{{ site.baseurl }}/upload/ci/travis/shot-travis-accounts.png" class="img img-thumbnail pull-right" alt="Travis-CI - Accounts">
 Também é possível clicar no canto superior direito, acessando o menu _Accounts_ para integrar - ou desligar - outros projetos
 que você tenha acesso.
 
@@ -116,16 +116,16 @@ como falado anteriormente.
 Na imagem abaixo, temos um exemplo de projetos integrados e não integrados com a ferramenta, assim como algumas organizações que
 possuo acesso através do [meu **GitHub**](https://github.com/mrprompt).
 
-<img src="{{ site.baseurl }}/upload/shot-travis-accounts-2.png" class="img img-thumbnail" alt="Travis-CI - Accounts 2">
+<img src="{{ site.baseurl }}/upload/ci/travis/shot-travis-accounts-2.png" class="img img-thumbnail" alt="Travis-CI - Accounts 2">
 
 Com o **Travis** habilitado para seu projeto, você pode ir até a página do projeto no **GitHub** e olhar as configurações do
 serviço, na aba _Webhooks & Services_, nela, você verá uma imagem semelhante a abaixo, onde você poderá ver serviço habilitado.
 
-<img src="{{ site.baseurl }}/upload/shot-github-settings-services.png" class="img img-thumbnail" alt="GitHub - Webhooks & Services">
+<img src="{{ site.baseurl }}/upload/ci/travis/shot-github-settings-services.png" class="img img-thumbnail" alt="GitHub - Webhooks & Services">
 
 Clicando no lápis, teremos detalhes da configuração - não se preoupce, você não precisa mexer em nada aqui:
 
-<img src="{{ site.baseurl }}/upload/shot-github-settings-services-travis.png" class="img img-thumbnail" alt="GitHub - Webhooks & Services - Travis">
+<img src="{{ site.baseurl }}/upload/ci/travis/shot-github-settings-services-travis.png" class="img img-thumbnail" alt="GitHub - Webhooks & Services - Travis">
 
 Você também pode testar o serviço, sem ter que fazer um push para seu repositório, clicando no botão "Test service" logo no topo.
 
