@@ -27,7 +27,7 @@ Pra ficar mais fácil de entender e conhecer a ferramenta, vou dividir este post
     - [Ruby](#configurando-ruby)
     - [Java](#configurando-java)
 - [Prós & Contras](#pros-e-contras)
-- [Conclusão](#concusao)
+- [Conclusão](#conclusao)
 - [Mais Informações](#mais-informacoes)
 
 ### <a name="apresentacao"></a> Apresentação
