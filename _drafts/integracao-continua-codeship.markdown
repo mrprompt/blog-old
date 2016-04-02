@@ -2,7 +2,7 @@
 layout: post
 author: mrprompt
 comments: true
-date: 2016-03-27 00:00:01+00:00
+date: 2016-04-02 12:21:01+00:00
 slug: integracao-continua-codeship
 title: Integração Contínua com CodeShip
 ---
@@ -193,7 +193,10 @@ Como não poderia deixar, ele também possibilita o uso dos **Badges** - todo pr
 <img src="{{ site.baseurl }}/upload/ci/codeship/shot-codeship-badge.png" class="img img-responsive" alt="Codeship - Badge" title="Codeship - Badge">
 
 Então é isso, o **CodeShip** é mais que recomendado para você que quer iniciar um processo de Integração ou Entrega contínua em seus
-projetos, mas não quer perder tempo com arquivos de configuração e longos processos.
+projetos, mas não quer perder tempo com arquivos de configuração, configuração de servidores ou longos processos.
+
+Sua configuração simplificada e integração direta com o **BitBucket** e **GitHub** facilitam e muito o uso por grande parte das equipes
+e facilita sua implantação. Poder utilizar a ferramenta gratuitamente para projetos OpenSource também é um grande diferencial, claro.
 
 ### <a name="mais-informacoes"></a> Mais Informações
 
@@ -201,3 +204,5 @@ projetos, mas não quer perder tempo com arquivos de configuração e longos pro
 - [Suporte a Docker](http://pages.codeship.com/docker)
 - [Integração Contínua](https://codeship.com/documentation/continuous-integration/)
 - [Deploy Contínuo](https://codeship.com/documentation/continuous-deployment/)
+
+O próximo da lista é [Jenkins](https://jenkins.io/), prepare-se e até lá ;)
