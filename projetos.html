@@ -9,6 +9,7 @@ slug: index
 
 	<div class="row">
 		{% for repository in site.github.public_repositories %}
+			{% if repository.fork == false %}
 			<div class="col-md-4">
 				<div class="post-content">
 					<div class="post-title">
@@ -28,6 +29,7 @@ slug: index
 
 				<hr>
 			</div>
+			{% endif %}
 		{% endfor %}
 	</div>
 	<!-- /Open Source Projects -->
