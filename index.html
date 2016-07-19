@@ -28,7 +28,7 @@ slug: index
 	<div class="row">
 		{% for post in paginator.posts %}
 		<!-- start: Post -->
-		<article class="col-sm-12 col-md-12 col-lg-6">
+		<article class="col-md-12">
 			<div class="post-content" style="min-height: 10em">
 				<div class="post-title">
 					<h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
