@@ -12,8 +12,7 @@ vou apresentar agora a você o Jenkins.
 Acho que simplesmente, o mais famoso e utilizado de todos - e também, o mais complicado de se manter.
 
 <img src="{{ site.baseurl }}/upload/ci/jenkins/logo.png" 
-    class="img img-responsive pull-right" 
-    alt="Jenkins Logo" title="Jenkins" width="185" height="256">
+    class="img img-responsive pull-right" alt="Jenkins Logo" title="Jenkins" width="185" height="256">
 
 Pra não quebrar o padrão<sup>vulgo TOC</sup>, vou dividir o post em algumas partes:
 
@@ -43,13 +42,15 @@ primeira opção, buscando um repositório constantemente atualizado e etc.
 Para este artigo, preferi utilizar a versão da [Openshift](https://openshift.com), pela simplicidade de instalação e um pouco de 
 preguiça, admito.
 
+Logo após instalado, a primeira tela que vemos no Jenkins é a de login:
+
 <img src="{{ site.baseurl }}/upload/ci/jenkins/login.png" 
-    class="img img-responsive pull-left" 
-    alt="Login" title="Jenkins Login">
+    class="img img-responsive pull-left" alt="Login" title="Jenkins Login">
+
+Fazendo o login - em alguns casos, caímos direto na dashboard, para depois podermos criar usuários de acesso:
 
 <img src="{{ site.baseurl }}/upload/ci/jenkins/dashboard-vazia.png" 
-    class="img img-responsive pull-right" 
-    alt="Dashboard" title="Jenkins Dashboard">
+    class="img img-responsive pull-right" alt="Dashboard" title="Jenkins Dashboard">
 
 ### <a name="configurando"></a> Configurando
 
@@ -67,37 +68,41 @@ Nosso primeiro passo é ao clicar em "Novo job", selecionar o tipo de projeto qu
 prefiro utilizar o "free-style", que é uma configuração limpa e podemos ir configurando os passos conforme a necessidade de 
 nosso projeto.
 <img src="{{ site.baseurl }}/upload/ci/jenkins/selecionando-um-tipo.png" 
-    class="img img-responsive pull-right" 
-    alt="Tipos" title="Jenkins - Tipos de projetos">
+    class="img img-responsive" alt="Tipos" title="Jenkins - Tipos de projetos">
 
 Selecionando um tipo de projeto, podemos ver uma configuração geral do mesmo, onde vamos configurar desde o repositório, até os 
 passos para que nosso build possa ser considerado entregável.
 <img src="{{ site.baseurl }}/upload/ci/jenkins/iniciando-projeto.png" 
-    class="img img-responsive" 
-    alt="Detalhes" title="Jenkins - Detalhes do projeto">
+    class="img img-responsive" alt="Detalhes" title="Jenkins - Detalhes do projeto">
 
-
-<img src="{{ site.baseurl }}/upload/ci/jenkins/definindo-historico.png" 
-    class="img img-responsive pull-right" 
-    alt="Histórico" title="Jenkins - Número de builds a se manter">
 Eu procuro não manter um número muito grande de builds armazenados, já que os mesmos rodam a cada push - e vai por mim, você 
 também não vai querer que seu disco encha rapidamente - então, seleciono a opção "descartar builds antigos" e defino um número 
 máximo de builds a se manter - geralmente 10.
 
+<img src="{{ site.baseurl }}/upload/ci/jenkins/definindo-historico.png" 
+    class="img img-responsive" alt="Histórico" title="Jenkins - Número de builds a se manter">
+
 Em seguida, selecionando o nosso controle de versão definimos o endereço do nosso repositório, outro caso que é importante se 
 atentar, é a permissão do jenkins no seu repositório, eu recomendo sempre o uso de SSH, criando uma chave para o servidor que 
 está rodando o Jenkins e dando permissão a ele no repositório via chave pública.  
+
 <img src="{{ site.baseurl }}/upload/ci/jenkins/git.png" 
-    class="img img-responsive pull-left" 
-    alt="Git" title="Jenkins - Git">
+    class="img img-responsive" alt="Git" title="Jenkins - Git">
+
+Você também pode especificar o branch a ser observado, o master é imprescindível, mas você também pode optar por rodar os builds
+em todos os branches, acho que isso vai de cada equipe. Eu recomendo sempre rodar, independente do branch que esteja trabalhando.
 
 Clicando no botão com o ícone da chave e "add" podemos configurar nossa permissão a ser utilizada no repositório:
+
+Caso você prefira utilizar usuário e senha, e seu repositório utilize https, você pode definir as credenciais necessárias:
 <img src="{{ site.baseurl }}/upload/ci/jenkins/credenciais-senha.png" 
-    class="img img-responsive pull-left" 
-    alt="Credenciais" title="Jenkins - Credenciais - Senha">
+    class="img img-responsive" alt="Credenciais" title="Jenkins - Credenciais - Senha">
+
+Se você optar por utilizar chaves ssh - o ideal na minha opinião - basta cadastrar uma chave, que pode ser única para cada 
+servidor com o Jenkins, ou uma única compartilhada, fica a seu critério:
 <img src="{{ site.baseurl }}/upload/ci/jenkins/credenciais-ssh.png" 
-    class="img img-responsive pull-right" 
-    alt="Credenciais" title="Jenkins - Credenciais - SSH"> 
+    class="img img-responsive" alt="Credenciais" title="Jenkins - Credenciais - SSH"> 
+
 
 #### Bônus Track - Exemplos de Configuração
 

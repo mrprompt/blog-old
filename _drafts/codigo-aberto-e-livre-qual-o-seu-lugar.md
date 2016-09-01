@@ -4,7 +4,7 @@ author: mrprompt
 comments: true
 date: 2016-07-21 00:0:00+00:00
 slug: fonte-aberto-e-software-livre-qual-o-seu-lugar
-title: Trampo novo e etc
+title: Fonte aberto e Software Livre 
 ---
 Sempre utilizei software livre e busquei contribuir com as comunidades o máximo que possível..
 
