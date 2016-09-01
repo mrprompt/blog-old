@@ -53,6 +53,51 @@ preguiça, admito.
 
 ### <a name="configurando"></a> Configurando
 
+O Jenkins requer - claro - que as ferramentas que você necessita para rodar o seui build estejam configuradas e funcionais na 
+máquina hospedeira, então, fique sempre atento a isso.
+
+No caso da VM disponibilizada pela Openshift, eu possuo o seguinte ambiente configurado por padrão:
+
+- PHP 5.3.3
+- Java 1.7.0_111 
+- Nodejs 0.6.20
+- Ruby 1.8.7
+
+Nosso primeiro passo é ao clicar em "Novo job", selecionar o tipo de projeto que vamos configurar, para um primeiro passo,
+prefiro utilizar o "free-style", que é uma configuração limpa e podemos ir configurando os passos conforme a necessidade de 
+nosso projeto.
+<img src="{{ site.baseurl }}/upload/ci/jenkins/selecionando-um-tipo.png" 
+    class="img img-responsive pull-right" 
+    alt="Tipos" title="Jenkins - Tipos de projetos">
+
+Selecionando um tipo de projeto, podemos ver uma configuração geral do mesmo, onde vamos configurar desde o repositório, até os 
+passos para que nosso build possa ser considerado entregável.
+<img src="{{ site.baseurl }}/upload/ci/jenkins/iniciando-projeto.png" 
+    class="img img-responsive" 
+    alt="Detalhes" title="Jenkins - Detalhes do projeto">
+
+
+<img src="{{ site.baseurl }}/upload/ci/jenkins/definindo-historico.png" 
+    class="img img-responsive pull-right" 
+    alt="Histórico" title="Jenkins - Número de builds a se manter">
+Eu procuro não manter um número muito grande de builds armazenados, já que os mesmos rodam a cada push - e vai por mim, você 
+também não vai querer que seu disco encha rapidamente - então, seleciono a opção "descartar builds antigos" e defino um número 
+máximo de builds a se manter - geralmente 10.
+
+Em seguida, selecionando o nosso controle de versão definimos o endereço do nosso repositório, outro caso que é importante se 
+atentar, é a permissão do jenkins no seu repositório, eu recomendo sempre o uso de SSH, criando uma chave para o servidor que 
+está rodando o Jenkins e dando permissão a ele no repositório via chave pública.  
+<img src="{{ site.baseurl }}/upload/ci/jenkins/git.png" 
+    class="img img-responsive pull-left" 
+    alt="Git" title="Jenkins - Git">
+
+Clicando no botão com o ícone da chave e "add" podemos configurar nossa permissão a ser utilizada no repositório:
+<img src="{{ site.baseurl }}/upload/ci/jenkins/credenciais-senha.png" 
+    class="img img-responsive pull-left" 
+    alt="Credenciais" title="Jenkins - Credenciais - Senha">
+<img src="{{ site.baseurl }}/upload/ci/jenkins/credenciais-ssh.png" 
+    class="img img-responsive pull-right" 
+    alt="Credenciais" title="Jenkins - Credenciais - SSH"> 
 
 #### Bônus Track - Exemplos de Configuração
 
