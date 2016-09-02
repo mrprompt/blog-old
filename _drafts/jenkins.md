@@ -103,6 +103,26 @@ servidor com o Jenkins, ou uma única compartilhada, fica a seu critério:
 <img src="{{ site.baseurl }}/upload/ci/jenkins/credenciais-ssh.png" 
     class="img img-responsive" alt="Credenciais" title="Jenkins - Credenciais - SSH"> 
 
+Agora é que o bicho pega, a hora que começamos a configurar os passos do nosso build. 
+
+Após configuramos as chaves e permissões para o repositório, vamos configurar quando queremos que o Jenkins analise nosso 
+repositório em busca de mudanças, claro, que se você quiser, também pode pular este passo e deixar todo o processo de build 
+do jenkins manual - mas que graça tem, não é mesmo?
+<img src="{{ site.baseurl }}/upload/ci/jenkins/periodicidade.png" 
+    class="img img-responsive" alt="Periodicidade" title="Jenkins - Checagem do repositório"> 
+
+É importante lembrar, que para um build ser dado como bem sucedido, é necessário que todos os passos sejam executados com sucesso.
+
+Os passos de build vai de cada aplicação, mas não foge muito do processo: 
+
+```
+clonar -> instalar dependências -> subir ambiente de testes -> rodar testes -> deploy
+```
+
+Claro, que nem todos os projetos podem seguir esse caminho lindo e maravilhoso, porém, o jenkins não serve apenas para fazer 
+testes unitários e etc, serve também para automatizar seu processo de build por exemplo. Vamos seguir configurando um processo 
+básico, com poucos passos, apenas para fins de aprendizado e conhecimento da ferramenta.
+
 
 #### Bônus Track - Exemplos de Configuração
 
