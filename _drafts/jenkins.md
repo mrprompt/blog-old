@@ -103,13 +103,19 @@ servidor com o Jenkins, ou uma única compartilhada, fica a seu critério:
 <img src="{{ site.baseurl }}/upload/ci/jenkins/credenciais-ssh.png" 
     class="img img-responsive" alt="Credenciais" title="Jenkins - Credenciais - SSH"> 
 
-Agora é que o bicho pega, a hora que começamos a configurar os passos do nosso build. 
+
+<img src="{{ site.baseurl }}/upload/ci/jenkins/periodicidade.png" 
+    class="img img-responsive pull-right" alt="Periodicidade" title="Jenkins - Checagem do repositório">
 
 Após configuramos as chaves e permissões para o repositório, vamos configurar quando queremos que o Jenkins analise nosso 
 repositório em busca de mudanças, claro, que se você quiser, também pode pular este passo e deixar todo o processo de build 
 do jenkins manual - mas que graça tem, não é mesmo?
-<img src="{{ site.baseurl }}/upload/ci/jenkins/periodicidade.png" 
-    class="img img-responsive" alt="Periodicidade" title="Jenkins - Checagem do repositório"> 
+
+A checagem usa o mesmo padrão da cron, então, é possível também utilizar valores como @hourly, @daily e etc, dependendo do 
+tamanho do seu projeto e de quanto tempo leve o build, seja uma boa idéia chegar num valor que não atrapalhe a equipe aqui, 
+criando filas de builds desnecessários.
+
+Agora é que o bicho pega, a hora que começamos a configurar os passos do nosso build.
 
 É importante lembrar, que para um build ser dado como bem sucedido, é necessário que todos os passos sejam executados com sucesso.
 
