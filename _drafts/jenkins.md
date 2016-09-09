@@ -2,7 +2,7 @@
 layout: post
 author: mrprompt
 comments: true
-date: 2016-09-07 00:0:00+00:00
+date: 2016-09-09 03:08:00+00:00
 slug: integracao-continua-jenkins
 title: Integração Contínua com Jenkins
 ---
