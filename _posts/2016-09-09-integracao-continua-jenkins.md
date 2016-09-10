@@ -5,7 +5,6 @@ comments: true
 date: 2016-09-09 03:08:00+00:00
 slug: integracao-continua-jenkins
 title: Integração Contínua com Jenkins
-category: ci
 ---
 Voltando a nossa série sobre [Integração Contínua]({% post_url 2016-03-25-falando-sobre-integracao-continua-e-qualidade-de-desenvolvimento %}), vou apresentar agora a você o Jenkins.
 
