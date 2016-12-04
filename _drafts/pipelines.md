@@ -13,7 +13,7 @@ No último post, sobre [Jenkins]({% post_url 2016-09-09-integracao-continua-jenk
 
 <img src="{{ site.baseurl }}/upload/ci/pipelines/pipelines.png" class="img img-responsive img-thumbnail pull-right" alt="Bitbucket Pipelines Logo" title="Pipelines" width="400" height="335">
 
-Parando de enrolação, vamos ao que interessa, Pipelines!
+Parando de enrolação, vamos ao que interessa, [Pipelines](https://confluence.atlassian.com/bitbucket/bitbucket-pipelines-792496469.html)!
 
 - [Apresentação](#apresentacao)
 - [Instalação](#instalacao)
@@ -29,7 +29,7 @@ Parando de enrolação, vamos ao que interessa, Pipelines!
 
 ### <a name="apresentacao"></a> Apresentação
 
-O Pipelines era sem dúvida a ferramenta que faltava ao Bitbucket. Simples de configurar, utiliza [Docker](https://www.docker.io) - se você ainda não leu a respeito e começou a usar, pare agora e comece - e é totalmente grátis, inclusive para repositórios privados e projetos de times.
+O [Pipelines](https://confluence.atlassian.com/bitbucket/bitbucket-pipelines-792496469.html) era sem dúvida a ferramenta que faltava ao [Bitbucket](https://www.bitbucket.org). Simples de configurar, utiliza [Docker](https://www.docker.io) e é totalmente grátis, inclusive para repositórios privados.
 
 ### <a name="instalacao"></a> Instalação
 
@@ -56,7 +56,9 @@ Aqui vem a parte chata da configuração, toda modificação que você fizer nes
 
 O ambiente de integração, utiliza containers do Docker para rodar, então, o nosso primeiro passo na configuração do projeto, e informar a imagem que precisamos utilizar para nosso build. Esta imagem pode ser tanto um container disponível no Docker Hub quanto um container próprio.
 
-A configuração do Pipelines é baseado em blocos de passos, chamado no arquivo de configuração de **step**. Cada **step** possui um **script**, que são os comandos rodados para a conclusão do build. Cada linha, do script, é um comando rodado após o término do anterior.
+A configuração do Pipelines é baseado em blocos de passos, chamado no arquivo de configuração de **step**.
+
+Cada **step** possui um **script**, que são os comandos rodados para a conclusão do build. Cada linha, do script, é um comando rodado após o término do anterior.
 
 O bloco **default** irá rodar os passos configurados nele para todos os branchs que receberem uma atualização, como um push ou um merge.
 
