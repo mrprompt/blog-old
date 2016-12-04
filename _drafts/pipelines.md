@@ -7,9 +7,10 @@ slug: integracao-continua-pipelines
 title: Integração Contínua com Bitbucket Pipelines
 ---
 Finalmente, mais um post para a série: [Integração Contínua]({% post_url 2016-03-25-falando-sobre-integracao-continua-e-qualidade-de-desenvolvimento %}).
-A correria anda tornando cada vez mais impossível estudar a quantidade de ferramentas que temos por aí, mas aos poucos vou caminhando.
 
-No último post, sobre [Jenkins]({% post_url 2016-09-09-integracao-continua-jenkins %}), prometi que o artigo a seguir seria sobre [PHPCI](https://www.phptesting.org/), mas o Bitbucket liberou para todos os Pipelines, e foi a ferramenta de CI escolhida para a equipe do qual faço parte na [BêeCambio](https://www.beecambio.com.br), resolvi falar sobre ela antes.
+A correria anda tornando cada vez mais impossível estudar a quantidade de ferramentas que temos por aí, mas aos poucos o projeto vai caminhando.
+
+No [último post]({% post_url 2016-09-09-integracao-continua-jenkins %}), prometi que o artigo a seguir seria sobre [PHPCI](https://www.phptesting.org/), mas o **Bitbucket** liberou para todos os **Pipelines** - antes estava restrito a apenas alguns desenvolvedores e somente para repositórios que não fizessem parte de um time ou projeto - e foi a ferramenta de CI escolhida para a equipe do qual faço parte na [BêeCambio](https://www.beecambio.com.br), resolvi falar sobre ela antes.
 
 <img src="{{ site.baseurl }}/upload/ci/pipelines/pipelines.png" class="img img-responsive img-thumbnail pull-right" alt="Bitbucket Pipelines Logo" title="Pipelines" width="400" height="335">
 
@@ -23,17 +24,18 @@ Parando de enrolação, vamos ao que interessa, [Pipelines](https://confluence.a
     - [Angularjs](#configurando-angularjs)
     - [Ruby](#configurando-ruby)
     - [Java](#configurando-java)
+    - [Trabalhando com múltiplos branchs](#configurando-multiplos-branchs)
 - [Prós & Contras](#pros-e-contras)
 - [Conclusão](#conclusao)
 - [Mais Informações](#mais-informacoes)
 
 ### <a name="apresentacao"></a> Apresentação
 
-O [Pipelines](https://confluence.atlassian.com/bitbucket/bitbucket-pipelines-792496469.html) era sem dúvida a ferramenta que faltava ao [Bitbucket](https://www.bitbucket.org). Simples de configurar, utiliza [Docker](https://www.docker.io) e é totalmente grátis, inclusive para repositórios privados.
+O [Pipelines](https://confluence.atlassian.com/bitbucket/bitbucket-pipelines-792496469.html) era sem dúvida a ferramenta que faltava para quem trabalha com repositórios no [Bitbucket](https://www.bitbucket.org). Simples de configurar, utiliza [Docker](https://www.docker.io) e grátis, inclusive para repositórios privados.
 
 ### <a name="instalacao"></a> Instalação
 
-A instalação do Pipelines não poderia ser mais simples, bastando que você habilite no menu lateral e siga os passos na tela.
+A instalação do Pipelines é bem simples, bastando que você habilite no menu lateral e siga os passos na tela. A instalação inicial, se divide em dois passos bem simples
 
 <img src="{{ site.baseurl }}/upload/ci/pipelines/00-menu-lateral.png" class="img img-responsive img-thumbnail text-center" alt="" title="" width="" height="">
 
@@ -170,6 +172,7 @@ Meu bloco **scripts** do package.json:
 },
 ...
 ```
+
 #### <a name="configurando-ruby"></a> Ruby
 
 ```
@@ -196,6 +199,41 @@ pipelines:
         script:  # Modify the commands below to build and test your repository.
           - mvn --version
           - mvn clean install
+```
+
+#### <a name="configurando-multiplos-branchs"></a> Trabalhando com múltiplos branchs
+
+```
+image: node:6.0.0
+
+pipelines:
+  default:
+    - step:
+        script:
+          - npm install
+          - npm test
+
+  branches:
+    stage:
+      - step:
+          script:
+            - npm install
+            - npm test
+            - npm run deploy:stage
+
+    homolog:
+      - step:
+          script:
+            - npm install
+            - npm test
+            - npm run deploy:homolog
+
+    master:
+      - step:
+          script:
+            - npm install
+            - npm test
+            - npm run deploy:production
 ```
 
 ### <a name="pros-e-contras"></a> Prós & Contras
