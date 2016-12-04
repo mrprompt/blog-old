@@ -99,7 +99,22 @@ Você pode ter uma referência completa do arquivo de configurações [aqui](htt
 
 #### Bônus Track - Exemplos de Configuração
 
+Como sempre, vou mostra abaixo algumas configurações utilizadas nos projetos que tenho no Pipelines, e também algumas disponíveis no próprio [guia](https://confluence.atlassian.com/bitbucket/language-guides-for-bitbucket-pipelines-856821477.html) do Pipelines.
+
 #### <a name="configurando-php"></a> PHP
+
+```
+image: phpunit/phpunit:5.0.3
+
+pipelines:
+  default:
+    - step:
+        script:
+          - composer --version
+          - phpunit --version
+          - composer install
+          - phpunit --configuration tests/phpunit.xml
+```
 
 #### <a name="configurando-nodejs"></a> Nodejs
 
@@ -157,11 +172,37 @@ Meu bloco **scripts** do package.json:
 ```
 #### <a name="configurando-ruby"></a> Ruby
 
+```
+image: ruby:2.3.0
+
+pipelines:
+  default:
+    - step:
+        script:  # Modify the commands below to build and test your repository.
+          - ruby --version
+          - bundler --version
+          - bundle install
+```
+
 #### <a name="configurando-java"></a> Java
+
+```
+# You can use any Docker image from Docker Hub or your own container registry
+image: maven:3.3.3
+
+pipelines:
+  default:
+    - step:
+        script:  # Modify the commands below to build and test your repository.
+          - mvn --version
+          - mvn clean install
+```
 
 ### <a name="pros-e-contras"></a> Prós & Contras
 
 A favor do Pipelines, tem muita coisa, apesar de ser uma ferramenta nova e ainda em sua versão beta, ela cumpre o que promete e reconhece [suas limitações](https://confluence.atlassian.com/bitbucket/limitations-of-bitbucket-pipelines-827106051.html), porém, roda muito rápido e faz parte do Bitbucket, não uma ferramenta a parte.
+
+Como não podia faltar em nenhuma ferramenta de CI, existem [várias integrações](https://confluence.atlassian.com/bitbucket/bitbucket-pipelines-integrations-826868162.html) prontas para utilizar, como Deploy para S3, Heroku, Azure e etc.
 
 Contra, por enquanto, é que somente roda em projetos em projetos do Bitbucket, e ainda é um pouco problemático com o arquivo de configuração - talvez isso seja problema do próprio yaml, mas as vezes incomoda.
 
@@ -170,9 +211,14 @@ Contra, por enquanto, é que somente roda em projetos em projetos do Bitbucket, 
 
 Para quem utiliza exclusivamente o Bitbucket como controle de versão e possui projetos privados, mas não quer gastar uma quantia considerável para rodar utilizar uma ferramenta de CI, o Pipelines cai como uma luva.
 
+Com uma configuração bem simplificada, sem a necessidade de instalar dezenas de ferramentas anteriormente e etc, é a ferramentas ideal para equipes e projetos de qualquer tamanho, possibilitando um fluxo de entrega muito mais ágil e de configuração visível para todos os membros da equipe. Possibilitando inclusive simulações locais do ambiente de build.
+
+Rodando sobre Docker, é possível manter ainda mais controle sobre o ambiente necessário para o ideal funcionamento do projeto, dando ainda mais transparência sobre o processo.
+
 ### <a name="mais-informacoes"></a> Mais Informações
 
 - [Bitbucket Pipelines](https://confluence.atlassian.com/bitbucket/bitbucket-pipelines-792496469.html)
 - [Get started with Bitbucket Pipelines](https://confluence.atlassian.com/bitbucket/get-started-with-bitbucket-pipelines-792298921.html)
 - [Language guides](https://confluence.atlassian.com/bitbucket/language-guides-for-bitbucket-pipelines-856821477.html)
 - [BITBUCKET-PIPELINES.YML REFERENCE](https://confluence.atlassian.com/bitbucket/configure-bitbucket-pipelines-yml-792298910.html)
+- [Language guides for Bitbucket Pipelines](https://confluence.atlassian.com/bitbucket/language-guides-for-bitbucket-pipelines-856821477.html)
