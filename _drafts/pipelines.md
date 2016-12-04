@@ -76,7 +76,7 @@ Cada **step** possui um **script**, que são os comandos rodados para a conclus�
 
 O bloco **default** irá rodar os passos configurados nele para todos os branchs que receberem uma atualização, como um push ou um merge.
 
-Você também pode criar um bloco com o nome de um branch específico, para rodar quais passos achar necessário
+Você também pode criar blocos de configurações para determinados branchs ou tags, e rodar os passos achar necessário. Eu gosto muito desse tipo de configuração, para disparar o evento de deploy, que sempre deixo a cargo de outra ferramenta.
 
 Um exemplo do arquivo de configuração é esse:
 
@@ -95,20 +95,84 @@ pipelines:
           - composer install
 ```
 
+Você pode ter uma referência completa do arquivo de configurações [aqui](https://confluence.atlassian.com/bitbucket/configure-bitbucket-pipelines-yml-792298910.html).
+
 #### Bônus Track - Exemplos de Configuração
 
 #### <a name="configurando-php"></a> PHP
 
 #### <a name="configurando-nodejs"></a> Nodejs
 
+```
+image: node:6.0.0
+
+pipelines:
+  default:
+    - step:
+        script:
+          - npm install --silent --progress=false
+          - npm test
+```
+Meu bloco **scripts** do package.json:
+
+```
+...
+"scripts": {
+  "start": "node app.js",
+  "test": "mocha test/**/*Test.js",
+  "coverage": "istanbul cover _mocha -- -R spec"
+},
+...
+```
+
 #### <a name="configurando-angularjs"></a> Angularjs
 
+```
+image: node:6.0.0
+
+pipelines:
+  default:
+    - step:
+        script:
+          - npm install --silent --progress=false
+          - npm run bower
+          - npm run build
+          - nohup bash -c "npm run webdriver-start 2>&1 &" && sleep 9
+          - npm run start 2>&1  &
+          - npm test
+```
+
+Meu bloco **scripts** do package.json:
+
+```
+...
+"scripts": {
+  "bower": "bower install",
+  "build": "gulp build",
+  "start": "gulp serve",
+  "webdriver-start": "webdriver-manager update && webdriver-manager start",
+  "test": "protractor protractor.conf.js"
+},
+...
+```
 #### <a name="configurando-ruby"></a> Ruby
 
 #### <a name="configurando-java"></a> Java
 
 ### <a name="pros-e-contras"></a> Prós & Contras
 
+A favor do Pipelines, tem muita coisa, apesar de ser uma ferramenta nova e ainda em sua versão beta, ela cumpre o que promete e reconhece [suas limitações](https://confluence.atlassian.com/bitbucket/limitations-of-bitbucket-pipelines-827106051.html), porém, roda muito rápido e faz parte do Bitbucket, não uma ferramenta a parte.
+
+Contra, por enquanto, é que somente roda em projetos em projetos do Bitbucket, e ainda é um pouco problemático com o arquivo de configuração - talvez isso seja problema do próprio yaml, mas as vezes incomoda.
+
+
 ### <a name="conclusao"></a> Conclusão
 
+Para quem utiliza exclusivamente o Bitbucket como controle de versão e possui projetos privados, mas não quer gastar uma quantia considerável para rodar utilizar uma ferramenta de CI, o Pipelines cai como uma luva.
+
 ### <a name="mais-informacoes"></a> Mais Informações
+
+- [Bitbucket Pipelines](https://confluence.atlassian.com/bitbucket/bitbucket-pipelines-792496469.html)
+- [Get started with Bitbucket Pipelines](https://confluence.atlassian.com/bitbucket/get-started-with-bitbucket-pipelines-792298921.html)
+- [Language guides](https://confluence.atlassian.com/bitbucket/language-guides-for-bitbucket-pipelines-856821477.html)
+- [BITBUCKET-PIPELINES.YML REFERENCE](https://confluence.atlassian.com/bitbucket/configure-bitbucket-pipelines-yml-792298910.html)
