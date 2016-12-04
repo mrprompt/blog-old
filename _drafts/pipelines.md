@@ -52,9 +52,23 @@ O segundo passo da instalação, é selecionar o ambiente que você pretende con
 
 Finalizando os passos, será criado no projeto o arquivo **bitbucket-pipelines.yml**, contendo a configuração do ambiente e dos passos necessários para alcançar o sucesso do nosso build.
 
-Aqui vem a parte chata da configuração, toda modificação que você fizer neste arquivo, é um commit + push que você precisa mandar pro projeto, eu acho um pouco chato isso e suja o projeto desnecessariamente, mas vamos lá.
+Aqui vem a parte chata da configuração, toda modificação que você fizer neste arquivo, é um commit + push que você precisa mandar pro projeto - você também pode rodar os builds localmente, mas [dá trabalho](https://confluence.atlassian.com/bitbucket/debug-your-pipelines-locally-with-docker-838273569.html).  Pessoalmente, acho um pouco chato isso e suja o projeto, mas vamos lá.
 
-O ambiente de integração, utiliza containers do Docker para rodar, então, o nosso primeiro passo na configuração do projeto, e informar a imagem que precisamos utilizar para nosso build. Esta imagem pode ser tanto um container disponível no Docker Hub quanto um container próprio.
+O ambiente de integração, utiliza containers do Docker para rodar, então, o nosso primeiro passo na configuração do projeto, e informar a imagem que precisamos utilizar para nosso build. Esta imagem pode ser tanto um container disponível no [Docker Hub](hub.docker.com) quanto um container próprio.
+
+Caso você não especifique uma imagem, será utilizada uma [imagem padrão](https://hub.docker.com/r/atlassian/default-image/), baseada no [Ubuntu 14.04](http://releases.ubuntu.com/14.04/), disponibilizada pelo time da [Atlassian](https://br.atlassian.com/), que contém algumas ferramentas por padrão:
+
+- wget
+- xvfb
+- curl
+- git: 1.9.1
+- java: 1.8u66
+- maven: 3.0.5
+- node: 4.2.1
+- npm: 2.14.7
+- nvm: 0.29.0
+- python: 2.7.6
+- gcc: 4.8.4
 
 A configuração do Pipelines é baseado em blocos de passos, chamado no arquivo de configuração de **step**.
 
@@ -80,7 +94,6 @@ pipelines:
         script: # Modify the commands below to build your repository.
           - composer install
 ```
-
 
 #### Bônus Track - Exemplos de Configuração
 
