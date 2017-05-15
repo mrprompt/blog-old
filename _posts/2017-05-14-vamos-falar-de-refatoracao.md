@@ -6,7 +6,7 @@ date: 2017-05-14 00:00:00+00:00
 slug: vamos-falar-de-refatoracao
 title: Vamos falar de refatoração
 ---
-## Ou porquê você deveria fazer seu trabalho direito
+### Ou porquê você deveria fazer seu trabalho direito
 
 Tem muito tempo que o que mais ouço são "programadores" reclamando que tal
 biblioteca não faz, tal componente é bugado demais, framework x é mal feito
