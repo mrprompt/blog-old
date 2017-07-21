@@ -3,7 +3,7 @@ layout: post
 author: mrprompt
 comments: true
 date: 2017-07-21 00:00:00+00:00
-slug: integracao-continua-pepelines-cache
+slug: integracao-continua-pipelines-cache
 title: Integração Contínua com Bitbucket Pipelines - Cache
 ---
 Não tenho tido muito tempo de continuar a série sobre integração contínua, porém, venho utilizado
@@ -55,7 +55,7 @@ pipelines:
 
 definitions:
   caches:
-    bower: public/lib
+    bower: bower_components
 ```
 
 Como você pode ver, utilizei uma configuração pré-existente (node) e uma customizada (bower) para cache.
