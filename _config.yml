@@ -10,7 +10,7 @@ timezone: America/Sao_Paulo
 permalink: pretty
 
 # Pagination
-paginate: 1
+paginate: 3
 pagination_path: "/:num"
 
 # Plugins
