@@ -10,7 +10,7 @@ Deu de notar que to completamente viciado no Bitbucket Pipelines? Pois é, como 
 na [BeeTech](https://www.beetech.global), então, nada mais natural do que ir acompanhando - e aplicando - as novidades 
 que vão aparecendo.
 
-Um pouco antes do [Cache](/integracao-continua-pipelines-cache), foi implementado o recurso de containers paralelos,
+Um pouco antes do [Cache](/2017/07/21/integracao-continua-pipelines-cache/), foi implementado o recurso de containers paralelos,
 ou auxiliares, como queira chamar, que nada são que container que rodam junto com seu fluxo de CI. Como um banco de
 dados por exemplo.
 
