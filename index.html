@@ -14,7 +14,7 @@ slug: index
 					<h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
 				</div>
 				<div class="post-meta">
-					<span><i class="fa fa-calendar"></i> {{ post.date |  date: '%d/%m/%Y' }}</span>
+					<span><i class="fa fa-calendar"></i> {{ post.date | date: '%d/%m/%Y' }}</span>
 				</div>
 				<div class="post-description">
 					{{ post.content | markdownify }}

@@ -1,0 +1,25 @@
+---
+layout: blog
+slug: arquivos
+---
+<!--start: Container -->
+<div class="container">
+    <div class="row">
+    {% for post in site.posts %}
+        <article class="col-md-4">
+			<div class="post-content" style="height: 25em; overflow: hidden">
+				<div class="post-title">
+					<h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+				</div>
+				<div class="post-meta">
+					<span><i class="fa fa-calendar"></i> {{ post.date | date: '%d/%m/%Y' }}</span>
+				</div>
+				<div class="post-description">
+					{{ post.excerpt | markdownify }}
+				</div>
+			</div>
+		</article>
+    {% endfor %}
+    </div>
+</div>
+<!--end: Container-->
