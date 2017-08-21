@@ -9,11 +9,11 @@
 				<div class="post-title">
 					<h2><a href="{{ post.url | prepend: site.baseurl }}">{{ page.title }}</a></h2>
 				</div>
+				<div class="post-meta">
+					<span><i class="mini-ico-calendar"></i>{{ page.date | date: '%d/%m/%Y' }}</span>
+				</div>
 				<div class="post-description">
 					{{ page.content | markdownify }}
-				</div>
-				<div class="post-meta">
-					<span><i class="mini-ico-calendar"></i>{{ page.date | date_to_string }}</span>
 				</div>
 				<div id="disqus_thread"></div>
 			</div>
