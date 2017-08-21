@@ -2,7 +2,7 @@
 layout: post
 author: Thiago Paes
 comments: true
-date: 2015-03-14 00:00:00+00:00
+date: 2015-03-14 00:00:01+00:00
 slug: load-balance-com-nginx
 title: Load Balance com Nginx
 ---

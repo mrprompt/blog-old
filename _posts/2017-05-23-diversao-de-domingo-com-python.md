@@ -2,7 +2,7 @@
 layout: post
 author: mrprompt
 comments: true
-date: 2017-05-23 00:00:00+00:00
+date: 2017-05-23 00:00:01+00:00
 slug: diversao-de-doming-com-python
 title: Diversão de Domingo com Python
 ---

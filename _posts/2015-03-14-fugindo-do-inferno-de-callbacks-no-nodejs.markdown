@@ -2,7 +2,7 @@
 layout: post
 author: Thiago Paes
 comments: true
-date: 2015-03-14 00:00:00+00:00
+date: 2015-03-14 00:00:01+00:00
 slug: fugindo-do-inferno-de-callbacks-no-nodejs
 title: Fugindo do inferno de callbacks no Nodejs
 ---

@@ -1,7 +1,7 @@
 # Site settings
 title: Thiago Paes - Blog Pessoal
 description: Blog pessoal do desenvolvedor web Thiago Paes - mrprompt
-url: http://www.mrprompt.com.br
+url: https://www.mrprompt.com.br
 baseurl: "" # the subpath of your site, e.g. /blog/
 
 # Build settings
