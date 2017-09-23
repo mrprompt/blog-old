@@ -5,7 +5,6 @@ comments: true
 date: 2011-01-25 22:58:00+00:00
 slug: enviando-e-mails-via-gmail-com-zend_mail
 title: Enviando e-mails via Gmail com Zend_Mail
-visible: true
 ---
 
 Configurar um servidor SMTP é trabalhoso, principalmente pela briga de gato e rato que é não cair nas listas negras e ser tratado como SPAM, confesso que não tenho muita paciência pra isso, apesar de já ter de faze-lo algumas vezes, mas se puder correr dessa alternativa, melhor ainda.

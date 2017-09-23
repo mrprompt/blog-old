@@ -5,7 +5,6 @@ comments: true
 date: 2008-03-16 03:32:00+00:00
 slug: utilizando-arquivos-cue-no-linux
 title: Utilizando arquivos .CUE no Linux
-visible: true
 ---
 
 Dica rápida que acabei de achar no Oráculo, e pra não anotar em algum canto e esquecer, melhor ficar por aqui. Baixei na última madruga, um torrent, cujo conteúdo, eram alguns arquivos .cue e .bin, certo que era uma imagem de cd, saí procurando no google uma forma de converter ou abrir os mesmos.

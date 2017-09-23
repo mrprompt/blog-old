@@ -5,7 +5,6 @@ comments: true
 date: 2015-09-03 13:00:00+00:00
 slug: formulario-de-contato-com-simpeform
 title: Formulário de Contato com SimpleForm
-visible: true
 ---
 Com a onda de sites estáticos, uma das coisas mais chatas, é ver aquele famoso "formmail.php" no meio do projeto, ou mesmo, aqueles devs 
 que gostam de fazer um código macarrônico, apenas para usar a função *mail* do PHP ou algo similar.

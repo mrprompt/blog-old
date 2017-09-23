@@ -5,7 +5,6 @@ comments: true
 date: 2008-10-17 03:31:00+00:00
 slug: transparencia-sem-compiz
 title: Transparência sem Compiz
-visible: true
 ---
 
 Tava procurando na net alguma forma de resolver o problema da falta de bordas, quando acionava o Compiz aqui no Debian Lenny, quando me deparei com a seguinte dica no blog do Lorenzo para obter o único efeito que eu uso no Compiz: a transparência real no terminal.

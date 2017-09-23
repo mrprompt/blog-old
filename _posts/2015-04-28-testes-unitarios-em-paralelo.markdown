@@ -5,7 +5,6 @@ comments: true
 date: 2015-04-28 18:16:45+00:00
 slug: rodando-testes-unitarios-em-paralelo
 title: Rodando testes unitários em paralelo
-visible: true
 ---
 
 Comecei a utilizar o plugin *paratest* em meus testes unitários para rodar testes em paralelo utilizando vários processos.

@@ -5,7 +5,6 @@ comments: true
 date: 2013-09-04 02:49:00+00:00
 slug: resolvendo-o-problema-com-upload-de-arquivos-grandes-no-nginx
 title: Resolvendo o problema com upload de arquivos grandes no Nginx
-visible: true
 ---
 
 Me deparei essa semana com um problema com um cliente que estava tentando

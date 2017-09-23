@@ -5,7 +5,6 @@ comments: true
 date: 2015-03-14 00:00:01+00:00
 slug: fugindo-do-inferno-de-callbacks-no-nodejs
 title: Fugindo do inferno de callbacks no Nodejs
-visible: true
 ---
 A pouco tempo atrás, apesar da minha experiência com front (HTML, CSS, Javascript), 
 achei interessante dar uma atualizada e resolvi ler sobre MEAN. Admito que fiquei

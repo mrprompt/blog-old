@@ -5,7 +5,6 @@ comments: true
 date: 2015-06-28 15:05:00+00:00
 slug: rotas-simples-com-silex
 title: Rotas simples com Silex
-visible: true
 ---
 O barato do Silex é que ele é realmente muito simples de se iniciar uma aplicação. Mas conforme a mesma vai crescendo,
 e consecutivamente, o número de páginas e rotas vai aumentando, fica realmente um saco toda hora ter que alterar o

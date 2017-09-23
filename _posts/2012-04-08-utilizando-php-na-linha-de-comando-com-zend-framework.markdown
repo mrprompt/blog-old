@@ -5,7 +5,6 @@ comments: true
 date: 2012-04-08 08:35:00+00:00
 slug: utilizando-php-na-linha-de-comando-com-zend-framework
 title: Utilizando PHP na linha de comando com Zend Framework
-visible: true
 ---
 
 Quem me conhece sabe que sempre gostei muito de brincar com o Terminal/Prompt, então, tenho costume de criar e utilizar vários 

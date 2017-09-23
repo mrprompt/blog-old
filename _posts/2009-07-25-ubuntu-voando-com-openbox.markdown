@@ -5,7 +5,6 @@ comments: true
 date: 2009-07-25 03:31:00+00:00
 slug: ubuntu-voando-com-openbox
 title: Ubuntu voando com Openbox
-visible: true
 ---
 
 [![](http://3.bp.blogspot.com/_nhKbx850xAI/TO84VoF7M0I/AAAAAAAAOR8/qq_JGTcDv2c/s320/openbox_conky.jpg)](http://3.bp.blogspot.com/_nhKbx850xAI/TO84VoF7M0I/AAAAAAAAOR8/qq_JGTcDv2c/s1600/openbox_conky.jpg)

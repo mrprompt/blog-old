@@ -5,7 +5,6 @@ comments: true
 date: 2015-05-08 12:52:45+00:00
 slug: samsung
 title: Porque NÃO comprar um Samsung Galaxy Gran Prime Duos
-visible: true
 ---
 Início do mês de Abril, decidi trocar meu MotoG, que estava com a tela quebrada e apresentando vários problemas
 por um celular novo. Fui até o shopping e escolhi a melhor opção (custo + benefício) pra mim. A apresentação da

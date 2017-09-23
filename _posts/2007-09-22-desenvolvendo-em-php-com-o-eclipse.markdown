@@ -5,7 +5,6 @@ comments: true
 date: 2007-09-22 03:25:00+00:00
 slug: desenvolvendo-em-php-com-o-eclipse
 title: Desenvolvendo em PHP com o Eclipse
-visible: true
 ---
 
 [![](http://4.bp.blogspot.com/_nhKbx850xAI/TO82_F7G6ZI/AAAAAAAAORM/tGN8R0ikvtA/s320/eclipse-96x96.png)](http://4.bp.blogspot.com/_nhKbx850xAI/TO82_F7G6ZI/AAAAAAAAORM/tGN8R0ikvtA/s1600/eclipse-96x96.png)
