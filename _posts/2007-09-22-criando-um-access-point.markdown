@@ -5,7 +5,7 @@ comments: true
 date: 2007-09-22 03:25:00+00:00
 slug: criando-um-access-point
 title: Criando um Access Point
-
+visible: true
 ---
 
 Introdução

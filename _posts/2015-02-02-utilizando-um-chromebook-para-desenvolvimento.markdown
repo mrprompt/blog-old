@@ -5,6 +5,7 @@ comments: true
 date: 2015-02-02 16:40:00+00:00
 slug: utilizando-o-chromebook-para-desenvolvimento
 title: Utilizando o ChromeBook para desenvolvimento
+visible: true
 ---
 
 Utilizar um ChromeBook e depender integralmente da internet para trabalhar é

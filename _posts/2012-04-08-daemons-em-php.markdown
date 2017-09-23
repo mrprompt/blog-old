@@ -5,6 +5,7 @@ comments: true
 date: 2012-04-08 08:58:00+00:00
 slug: daemons-em-php
 title: Daemons em PHP
+visible: true
 ---
 
 Quem nunca precisou criar um script que tivesse que rodar de tempos em tempos

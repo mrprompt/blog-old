@@ -5,6 +5,7 @@ comments: true
 date: 2013-03-24 09:19:00+00:00
 slug: php-gtk-no-lion
 title: PHP-GTK no Lion
+visible: true
 ---
 
 Desde que comprei o MacBook, não consegui mais trabalhar com PHP-GTK, pois não teve jeito de conseguir compilar a extensão.

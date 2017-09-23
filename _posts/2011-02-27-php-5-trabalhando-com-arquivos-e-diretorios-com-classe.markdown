@@ -5,6 +5,7 @@ comments: true
 date: 2011-02-27 20:52:00+00:00
 slug: php-5-trabalhando-com-arquivos-e-diretorios-com-classe
 title: PHP 5 - Trabalhando com Arquivos e Diretórios com classe
+visible: true
 ---
 
 Uma das features mais legais do PHP 5 são os chamados Iterators, tem pra tudo, array, diretórios, XM ... dando uma olhada na página do manual, você pode ter uma listagem completa, inclusive com exemplos de uso. Futuramente, pretendo falar sobre todos, mas a bola da vez é o [DirectoryInterator](http://docs.php.net/directoryiterator).

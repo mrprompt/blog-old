@@ -5,6 +5,7 @@ comments: true
 date: 2017-05-14 00:00:01+00:00
 slug: vamos-falar-de-refatoracao
 title: Vamos falar de refatoração
+visible: true
 ---
 ### Ou porquê você deveria fazer seu trabalho direito
 

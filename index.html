@@ -6,7 +6,7 @@ slug: index
 <div class="container">
 	<!-- Blog Posts -->
 	<div class="row">
-		{% for post in paginator.posts %}
+		{% for post in paginator.posts | where: "visible","true" %}
 		<!-- start: Post -->
 		<article class="col-md-12">
 			<div class="post-content" style="min-height: 10em">

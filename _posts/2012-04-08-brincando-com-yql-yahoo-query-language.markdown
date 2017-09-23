@@ -5,6 +5,7 @@ comments: true
 date: 2012-04-08 09:43:00+00:00
 slug: brincando-com-yql-yahoo-query-language
 title: Brincando com YQL - Yahoo Query Language
+visible: true
 ---
 
 A tempos ouvi falar da [YQL](http://developer.yahoo.com/yql/) - ou Yahoo Query Language -, uma linguagem [SQL](http://pt.wikipedia.org/wiki/SQL) criada pelo 

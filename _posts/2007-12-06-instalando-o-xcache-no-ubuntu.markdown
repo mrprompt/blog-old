@@ -5,6 +5,7 @@ comments: true
 date: 2007-12-06 04:26:00+00:00
 slug: instalando-o-xcache-no-ubuntu
 title: Instalando o XCache no Ubuntu
+visible: true
 ---
 
 Introdução Muitas vezes, precisamos gerar um cache a nível de código para nossas aplicações, pra evitar uma carga tão grande em servidores muito acessados. Opções não faltam por aí, e ao meu ver, a mais conhecida no mundo PHP é a eAccelerator, mas vasculhando na net - e nos repositórios do Ubuntu - me deparei com o XCache, que atendeu perfeitamente minhas necessidades, sem contar na simplicidade da instalação.

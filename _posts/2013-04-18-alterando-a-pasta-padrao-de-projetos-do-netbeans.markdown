@@ -5,6 +5,7 @@ comments: true
 date: 2013-04-18 19:33:00+00:00
 slug: alterando-a-pasta-padrao-de-projetos-do-netbeans
 title: Alterando a pasta padrão de projetos do NetBeans
+visible: true
 ---
 
 Eu pessoalmente, não gosto do padrão NetBeansProjects, gosto de deixar meus projetos organizados de outra forma, só que o que me irrita, 

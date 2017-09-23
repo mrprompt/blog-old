@@ -5,6 +5,7 @@ comments: true
 date: 2007-10-05 03:27:00+00:00
 slug: internacionalizando-aplicacoes-baseadas-no-cakephp-1-2
 title: Internacionalizando Aplicações baseadas no CakePHP 1.2
+visible: true
 ---
 
 Em primeiro lugar, este manual é inteiramente baseado "p28n, the top to bottom persistent internationalization tutorial. de Jason Chow, 

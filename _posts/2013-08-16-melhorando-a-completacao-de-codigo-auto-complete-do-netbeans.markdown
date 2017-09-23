@@ -5,6 +5,7 @@ comments: true
 date: 2013-08-16 05:39:00+00:00
 slug: melhorando-a-completacao-de-codigo-auto-complete-do-netbeans
 title: Melhorando a completação de código (auto-complete) do NetBeans
+visible: true
 ---
 
 O NetBeans para PHP, nem sempre consegue completar o código, quando uma variável é uma instância de um objeto, que está em outro lugar e etc.

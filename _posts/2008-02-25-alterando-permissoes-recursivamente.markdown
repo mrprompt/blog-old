@@ -5,6 +5,7 @@ comments: true
 date: 2008-02-25 04:23:00+00:00
 slug: alterando-permissoes-recursivamente
 title: Alterando permissões recursivamente
+visible: true
 ---
 
 Dia de folga é sempre muito legal, e nerd que é nerd, pega o dia de folga: PARA ORGANIZAR O HD!!! hahahahah

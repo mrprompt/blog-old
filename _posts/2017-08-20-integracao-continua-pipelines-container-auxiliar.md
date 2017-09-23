@@ -7,4 +7,5 @@ slug: integracao-continua-pipelines-containers-auxiliares
 title: Integração Contínua com Bitbucket Pipelines - Containers Auxiliares
 redirect_to:
   - https://mrprompt.gitbooks.io/ci/content/capitulo-5/bitbucket-pipelines.10.html
+visible: false
 ---

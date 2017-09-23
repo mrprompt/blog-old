@@ -5,6 +5,7 @@ comments: true
 date: 2017-05-23 00:00:01+00:00
 slug: diversao-de-doming-com-python
 title: Diversão de Domingo com Python
+visible: true
 ---
 Utilizo muito os serviços do [DeployBot](https://www.deploybot.com) para CD, junto
 ao meu fluxo de CI. Mas nem como em alguns momentos deploy é apenas uma questão

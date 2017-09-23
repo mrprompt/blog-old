@@ -5,6 +5,7 @@ comments: true
 date: 2015-04-29 12:52:45+00:00
 slug: priorizando-testes-com-phpunit
 title: Priorizando testes com PHPUnit
+visible: true
 ---
 
 Conforme nossa suíte de testes vai crescendo, obviamente, nossos testes vão

@@ -7,4 +7,5 @@ slug: integracao-continua-pipelines
 title: Integração Contínua com Bitbucket Pipelines
 redirect_to:
   - https://mrprompt.gitbooks.io/ci/content/capitulo-5/index.html
+visible: false
 ---

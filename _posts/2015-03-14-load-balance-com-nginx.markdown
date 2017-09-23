@@ -5,6 +5,7 @@ comments: true
 date: 2015-03-14 00:00:01+00:00
 slug: load-balance-com-nginx
 title: Load Balance com Nginx
+visible: true
 ---
 Para fazer um simples load balance com Nginx é simples.
 

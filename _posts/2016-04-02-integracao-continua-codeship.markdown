@@ -7,4 +7,5 @@ slug: integracao-continua-codeship
 title: Integração Contínua com CodeShip
 redirect_to:
   - https://mrprompt.gitbooks.io/ci/content/capitulo-3/index.html
+visible: false
 ---

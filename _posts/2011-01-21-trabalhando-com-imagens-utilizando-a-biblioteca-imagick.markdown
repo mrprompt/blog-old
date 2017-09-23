@@ -5,6 +5,7 @@ comments: true
 date: 2011-01-21 12:48:00+00:00
 slug: trabalhando-com-imagens-utilizando-a-biblioteca-imagick
 title: Trabalhando com imagens utilizando a biblioteca Imagick
+visible: true
 ---
 
 Qual programador nunca teve sua função 'criaThumb', 'thumb' ou parecida, utilizando aqueles terríveis - e chatos - cálculos e 'ifs' com GD não é mesmo? Pessoalmente, nunca gostei, utilizada por não conhecer outra alternativa, mas agora com a biblioteca Imagick isso ficou até massa de fazer.

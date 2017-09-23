@@ -5,6 +5,7 @@ comments: true
 date: 2015-07-07 15:00:00+00:00
 slug: utilizando-listeners-no-phpunit
 title: Utilizando Listeners no PHPUnit
+visible: true
 ---
 O PHPUnit com seu arquivo de configuração *phpunit.xml* nos permite inserir um
 arquivo de bootstrap para ser incluído antes da nossa suíte de testes rodar,
