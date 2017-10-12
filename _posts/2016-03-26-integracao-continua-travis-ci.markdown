@@ -7,5 +7,5 @@ slug: integracao-continua-travis-ci
 title: Integração Contínua com Travis-CI
 hidden: true
 redirect_to:
-  - https://mrprompt.gitbooks.io/ci/content/capitulo-2/index.html
+  - https://ci.mrprompt.com.br/capitulo-2/
 ---

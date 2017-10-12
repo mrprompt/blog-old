@@ -7,5 +7,5 @@ slug: integracao-continua-pipelines-cache
 title: Integração Contínua com Bitbucket Pipelines - Cache
 hidden: true
 redirect_to:
-  - https://mrprompt.gitbooks.io/ci/content/capitulo-5/bitbucket-pipelines.11.html
+  - https://ci.mrprompt.com.br/capitulo-5/
 ---

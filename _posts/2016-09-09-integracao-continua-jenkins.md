@@ -7,5 +7,5 @@ slug: integracao-continua-jenkins
 title: Integração Contínua com Jenkins
 hidden: true
 redirect_to:
-  - https://mrprompt.gitbooks.io/ci/content/capitulo-4/index.html
+  - https://ci.mrprompt.com.br/capitulo-4/
 ---
