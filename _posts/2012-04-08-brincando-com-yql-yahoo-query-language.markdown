@@ -26,14 +26,14 @@ Mas, falando tanto assim, vamos a parte prática ;)
 
 SPara mostrar um exemplo rodando, vamos executar [este YQL](http://y.ahoo.it/jydbv), onde listo todos os links da página inicial do Globo.com:
 
-{% highlight sql %}
+```
 > select * from html where url="http://www.globo.com" and xpath='//a'
-{% endhighlight %}
+```
 
 Agora selecione abaixo da box de edição, o tipo de retorno que deseja e pronto, super maneiro não é?
 Tá, mas agora você deve estar se perguntando, como utilizar isso de forma prática, vou colar um exemplo utilizando jQuery:
 
-{% highlight javascript %}
+```
     $.ajax({
     type:'GET',
     url: "http://y.ahoo.it/jydbv",
@@ -54,7 +54,7 @@ Tá, mas agora você deve estar se perguntando, como utilizar isso de forma prá
         }
     }
 });
-{% endhighlight %}
+```
 
 Explicando: o jQuery nos permite chamar um JSON "paralelo", ou seja, em outro host, e é isso que o retorno do Yahoo nos envia, por isso que definimos ali na 
 chamada, o dataType como 'jsonp', isso é muito importante.

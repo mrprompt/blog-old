@@ -15,22 +15,22 @@ Instalando
 --
 A instação do nginx é mais que tranquila, no meu Ubuntu, tive apenas que mandar:
 
-{% highlight console %}
+```
 $ sudo apt-get install nginx
-{% endhighlight %}
+```
 
 Pronto, servido instalado. Se vc tiver o Apache ou outro servidor rodando, preste atenção, o nginx por padrão, vai tentar utilizar a porta 80, 
 como todos. Com isso, já temos um servidor web, mas somente para conteúdo estático, vamos adicionar suporte a PHP. Primeiro vamos instalar o 
 PHP, utilizando o jeito mais prático:
 
-{% highlight console %}
+```
 $ sudo apt-get install php5 php5-common php5-cgi php5-gd php5-mysql php5-sqlite
-{% endhighlight %}
+```
 
 Temos agora, um PHP bem básico instalado, sem muitos módulos, pq não é o propósito deste artigo.
 Precisamos agora configurar o nginx para interpretar corretamente nossos scripts PHP, abra o arquivo "default" - aqui em /etc/nginx/sites-availabe - e cole o conteúdo abaixo.
 
-{% highlight nginx %}
+```
 server {
     listen 80;
     server_name localhost;
@@ -45,14 +45,14 @@ server {
         include fastcgi_params;
     }
 }
-{% endhighlight %}
+```
 
 Essa é uma regrinha simples, que faz com que todos os arquivos com extensão ".php" requisitado pelo cliente, seja enviado e processado pelo php-cgi. 
 É necessário também, habilitar uma linha no php.ini (/etc/php5/cgi/php.ini):
 
-{% highlight nginx %}
+```
 cgi.fix_pathinfo=1
-{% endhighlight %}
+```
 
 Rodando o PHP como daemon No nosso caso, vamos utilizar o PHP no modo CGI,como você viu, as requisições a scripts PHP são encaminhadas via proxy para um socket. 
 Cole o conteúdo abaixo em um aquivo vazio, vamos chamar de php-fcgi:
@@ -163,7 +163,7 @@ EOF
 }
 
 parse_script_option_list $@
-{% endhighlight %}
+```
 
 Atribuímos permissão de execução e rodamos, pronto, suporte a PHP instalado. De quebra, já colocamos para iniciar logo após o boot.
 {% highlight console %}
@@ -172,7 +172,7 @@ $ sudo mv php-fcgi /etc/init.d/
 $ sudo update-rc.d php-fcgi defaults
 $ sudo /etc/init.d/php-fcgi start
 $ sudo /etc/init.d/nginx restart 
-{% endhighlight %}
+```
 
 ---
 Conclusão

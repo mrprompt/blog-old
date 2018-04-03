@@ -17,8 +17,8 @@ para fazer nossos scripts?
 Meu framework favorito atualmente, é o Zend, principalmente por ser modular - mas isso já é assunto para outro post ou conversa de bar -, 
 então, vou apresentar abaixo, a estrutura básica de um script cli, utilizando o Zend.
 
-{% highlight php5 linenos %}
-    <?php
+```php
+<?php
 /**
  * Script PHP-CLI exemplo
  */
@@ -93,7 +93,7 @@ if(isset($opts->start)) {
 if(isset($opts->stop)) {
     // nosso código
 }
-{% endhighlight %}
+```
 
 Bom, o código está bem simples de entender e auto explicativo. Basicamente, instanciamos o Zend_Application, normalmente, como fazemos 
 em nosso index.php, para instanciarmos a app e tudo que for necessário para rodar.

@@ -21,6 +21,7 @@ Classes para envio de e-mails existem aos montes, uma que gosto muito e recomend
 
 Primeiro, criamos um um arquivo chamado '_smtp.ini_' em _application/configs_ com o seguinte conteúdo:
 
+```
 ; -------------------------------------------------
 ; | SMTP Host configuration
 ; -------------------------------------------------
@@ -34,12 +35,12 @@ smtp.host    = smtp.gmail.com
 smtp.porta   = 465
 smtp.seguranca = ssl
 smtp.auth    = login
-
+```
 
 Agora, na action que vamos enviar o nosso e-mail, basta colocar o seguinte código
 
 
-
+```
 // busco as configurações no ini
 $objCfg = new Zend_Config_Ini(APPLICATION_PATH . '/configs/smtp.ini', 'smtp');
 $arrCfg = $objCfg->toArray();
@@ -66,7 +67,7 @@ $mail->setFrom($params['email'], $params['nome'])
 
 // desconecto do host smtp
 $smtp->getConnection()->disconnect();
-
+```
 
 
 

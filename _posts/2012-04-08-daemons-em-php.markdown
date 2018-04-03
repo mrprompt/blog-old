@@ -44,7 +44,7 @@ Agora vamos ao exemplo de código para rodarmos o daemon. No exemplo abaixo, col
 uma estrutura básica de script, que utilizo em meus projetos com Zend, que é meu
 framework padrão.
 
-{% highlight php linenos %}
+```
 defined('APPLICATION_PATH')
     || define('APPLICATION_PATH', __DIR__  . '/../application');
 
@@ -133,7 +133,7 @@ if(isset($opts->start)) {
 if(isset($opts->stop)) {
     System_Daemon::stop();
 }
-{% endhighlight %}
+```
 
 Pronto, com isso, já temos um exemplo de daemon rodando.
 

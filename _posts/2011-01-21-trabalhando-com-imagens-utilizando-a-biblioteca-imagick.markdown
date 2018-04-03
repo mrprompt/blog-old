@@ -13,7 +13,7 @@ Com ela, você pode não apenas criar miniaturas de imagens, mas também recuper
 
 A instalação é simples, no Ubuntu, basta dar um: 'sudo apt-get install php5-imagick' e pronto, o módulo esta lá, disponível pra uso. E você pode fazer horrores com esta biblioteca, abaixo vou citar um pequeno exemplo de uso:
 
-{% highlight php5 linenos %}
+```
 <?php
 // instancio a biblioteca informando a imagem como fonte
 $objImagem = new Imagick('/tmp/minhafotogigante.jpg');
@@ -41,7 +41,8 @@ $strImagemFormato = $objImagem->getImageFormat();
 
 // seto corretamente o content-type no header e imprimo
 header("Content-Type: image/{$strImagemFormato}");
+
 echo $strImagem;
-{% endhighlight %}
+```
 
 Viu, simples não? No manual existem várias outras opções de uso, e com certeza irão atender plenamente suas necessidades.

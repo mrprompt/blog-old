@@ -12,6 +12,7 @@ As vezes, é importante definir algumas urls mais amistosas para sua aplicação
 Para contornar isso, temos o [Zend_Controller_Router_Route](http://framework.zend.com/manual/en/zend.controller.router.html), que nos facilita o trabalho de criarmos as tais rotas, que é nome mas apropriado para este tipo de redirecionamento.
 
 O uso é simples, vamos criar no diretório 'application/configs' um arquivo chamado 'routes.ini', e colocamos nele o seguinte conteúdo:
+
 ```
 [routes]
 routes.artigos.route = "artigos/:sessao"
@@ -25,6 +26,7 @@ Entendeu? Não? Eu explico então cada linha. Onde está escrito '**artigos**', 
 Dentro do action que você apontou a rota, para receber o valor do parâmetro '**:sessao**' por exemplo, basta utilizar um _$this->_getParam('sessao')_.
 
 Em nosso Bootstrap, adicionamos um método para buscar automaticamente nossas rotas
+
 ```
 protected function _initRouter()
 {
@@ -39,6 +41,7 @@ protected function _initRouter()
     return $router;
 }
 ```
+
 Pronto, com isso, basta apontar sua url para '/artigos/nomedeumasessao', e está definida sua rota personalizada. Você pode ir adicionando quantas rotas quiser em seu routes.ini.
 
 

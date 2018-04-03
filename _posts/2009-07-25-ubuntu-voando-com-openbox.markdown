@@ -7,19 +7,27 @@ slug: ubuntu-voando-com-openbox
 title: Ubuntu voando com Openbox
 ---
 
-[![](http://3.bp.blogspot.com/_nhKbx850xAI/TO84VoF7M0I/AAAAAAAAOR8/qq_JGTcDv2c/s320/openbox_conky.jpg)](http://3.bp.blogspot.com/_nhKbx850xAI/TO84VoF7M0I/AAAAAAAAOR8/qq_JGTcDv2c/s1600/openbox_conky.jpg)
-Instalando Vamos começar, instalando alguns pacotes básicos para um funcionamento redondo no nosso desktop.
+## Instalando 
 
+Vamos começar, instalando alguns pacotes básicos para um funcionamento redondo no nosso desktop.
+
+```
 # apt-get install openbox openbox-themes openbox-xdgmenu lxpanel rotate-wallpaper feh conky xcompmgr
+```
+
 Pronto, com isso, já temos nosso desktop instalado, falta agora configurar.
 
 Iniciando tudo junto Depois de tudo instaldo, rode o openbox selecionando ele no menu sessões do GDM ou do seu gerenciador de login. É simples, é básico, bem secão.. mas vamos incrementar isso.
 
 Vai existir - senão crie - no seu home, o diretório .config/openbox/, vamos criar o nosso arquivo de inicialização automática para alguns aplicativos e serviços importantes.
 
+```
 $ gedit ~/.config/openbox/autostart.sh
+```
+
 Cole o seguinte texto dentro do arquivo:
 
+```
 #!/bin/bash
 
 ## Serviços essenciais
@@ -41,14 +49,23 @@ rotate-wallpaper --path $HOME/Wallpapers/
 
 # Conky
 (sleep 3 && conky) &
+```
+
 Também precisamos dar permissão de execução para ele
 
+```
 $ chmod +x ~/.config/openbox/autostart.sh
+```
+
 Configurando o monitor do sistema Vamos criar agora o arquivo de configuração do Conky, nosso monitor do sistema, que vai rodar como um widget na sua área de trabalho, com bastante informação.
 
+```
 $ gedit ~/.conkyrc
+```
+
 E jogamos o conteúdo abaixo:
 
+```
 # UBUNTU-CONKY
 # A comprehensive conky script, configured for use on
 # Ubuntu / Debian Gnome, without the need for any external scripts.
@@ -154,6 +171,8 @@ ${downspeedgraph ppp0 25,140 00ff00 ff0000} ${alignr}${upspeedgraph ppp0
 Total: ${totaldown ppp0} ${alignr}Total: ${totalup ppp0}
 Inbound: ${tcp_portmon 1 32767 count} Outbound: ${tcp_portmon 32768
 61000 count}${alignr}Total: ${tcp_portmon 1 65535 count}
+```
+
 Pronto agora é só relogar e ver um desktop redondinho usando o mínimo de memória.
 
 O lxpanel é muito simples de ser configurado, é só clicar com o direito encima e pronto, ir adicionando e customizando conforme o seu gosto, e os serviços principais - ao menos pra mim - do Gnome, como o Network Manager rodam tranquilamente.

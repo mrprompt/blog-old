@@ -13,11 +13,17 @@ A segunda forma, é baixar do repositório Medibuntu, uma versão pré-compilada
 
 Instalando via Repositório
 
+```
 $ sudo -s
 # wget http://www.medibuntu.org/sources.list.d/jaunty.list -O /etc/apt/sources.list.d/medibuntu.list
 # wget -q http://packages.medibuntu.org/medibuntu-key.gpg -O- | apt-key add - && apt-get update
 # apt-get install ffmpeg lame mencoder libavcodec-unstripped-52
+```
+
 Testando a conversão
 
+```
 $ ffmpeg -i teste_in.wmv -b 1200 -deinterlace -ar 22050 -ab 64 -f flv -s 480x360 -aspect 4:3 -y -acodec libmp3lame -ac 1 teste_out.flv
+```
+
 Pronto, temos o ffmpeg pronto para uso.

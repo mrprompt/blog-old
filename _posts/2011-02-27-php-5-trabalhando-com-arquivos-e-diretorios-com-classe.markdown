@@ -12,6 +12,8 @@ Uma das features mais legais do PHP 5 são os chamados Iterators, tem pra tudo, 
 O [DirectoryIterator](http://docs.php.net/directoryiterator), é obviamente, para trabalhar com diretórios e arquivos. Com ele, você pode facilmente - e obviamente, orientado a objetos - trabalhar com o conteúdo de um diretório.
 
 Um exemplo de uso:
+
+```
 <?php
 // diretório atual do script
 $strDiretorio = __DIR__;
@@ -23,7 +25,7 @@ $objDiretorio = new DirectoryIterator($strDiretorio);
 foreach($objDiretorio as $objDiretorioConteudo) {
     echo $objDiretorioConteudo->getPathname() . PHP_EOL;
 }
-?>
+```
 
 Abaixo, listo alguns métodos que você pode usar no $objDiretorioConteudo do exemplo acima:
 

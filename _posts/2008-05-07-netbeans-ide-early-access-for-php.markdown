@@ -7,8 +7,6 @@ slug: netbeans-ide-early-access-for-php
 title: NetBeans IDE Early Access for PHP
 ---
 
-[![](http://4.bp.blogspot.com/_nhKbx850xAI/TO832pxYS-I/AAAAAAAAOR0/N02rSV3oFPo/s320/screenshot.png)](http://4.bp.blogspot.com/_nhKbx850xAI/TO832pxYS-I/AAAAAAAAOR0/N02rSV3oFPo/s1600/screenshot.png)
-
 Movido pela curiosidade que a tempos coçava minha cabeça, sobre o suporte a PHP no NetBeans, que inclusive, foi meu amigo Michel quem me falou, assim que vi o anúncio de lançamento no blog do Bruno, corri pra baixar e já tratei de tentar tocar um projeto nele pra ver no que dava.
 
 De início confesso que achei o NB - sente a intimidade - bem diferentão, afinal, eu já estava acostumadíssimo com o Eclipse PDT, com o suporte a SVN e Javascript instalado certinho, teclas de atalho, tudo configurado.. enfim. A instalação foi bem tranquila, apenas setei as permissões do arquivo .sh e mandei executar o bicho, sussão. Em comparação com o Eclipse, eu não consegui definir se o NetBeans chega a ser mais leve ou pesado, mas a integração com as Classes e extensões do projeto foram simplesmente ótimas, mas bastando seguir o padrão Ctrl+espaço e pronto, uma lista com todos os métodos das classes vinculadas, e também setadas no include_path - que no meu caso, acrescentei a pasta lib do CakePHP e a pasta com as minhas "classes velhas de guerra".
@@ -30,8 +28,3 @@ Achei o editor uma ferramenta agradável para se trabalhar, e que ao mesmo tempo
 Enfim, para os que querem experimentar uma nova IDE, rápida e ao mesmo tempo poderosa, recomendo em cheio essa nova versão do NetBeans, aos acostumados a IDEs mas tradicionais, como Zend Studio e o próprio Eclipse, está aí uma mais uma ferramenta para auxiliar a produtividade no desenvolvimento de softwares em PHP.
 
 Para mim, acho que achei meu editor ;)
-
-[![](http://2.bp.blogspot.com/_nhKbx850xAI/TO83hBhY4fI/AAAAAAAAORs/vyeB7F8b6kE/s320/screenshot-testing-netbeans-ide-early-access-for-php-300x174.png)](http://2.bp.blogspot.com/_nhKbx850xAI/TO83hBhY4fI/AAAAAAAAORs/vyeB7F8b6kE/s1600/screenshot-testing-netbeans-ide-early-access-for-php-300x174.png)
-[![](http://1.bp.blogspot.com/_nhKbx850xAI/TO83gqbZu9I/AAAAAAAAORk/VfNukk5MVW0/s320/screenshot-testing-netbeans-ide-early-access-for-php-1-300x174.png)](http://1.bp.blogspot.com/_nhKbx850xAI/TO83gqbZu9I/AAAAAAAAORk/VfNukk5MVW0/s1600/screenshot-testing-netbeans-ide-early-access-for-php-1-300x174.png)
-[![](http://2.bp.blogspot.com/_nhKbx850xAI/TO83eH64xBI/AAAAAAAAORc/Jz9bU0MhMh8/s320/screenshot-testing-netbeans-ide-early-access-for-php-1.png)](http://2.bp.blogspot.com/_nhKbx850xAI/TO83eH64xBI/AAAAAAAAORc/Jz9bU0MhMh8/s1600/screenshot-testing-netbeans-ide-early-access-for-php-1.png)
-[![](http://2.bp.blogspot.com/_nhKbx850xAI/TO83d44JeHI/AAAAAAAAORU/IyZ0wQ_h7jI/s320/screenshot-testing-netbeans-ide-early-access-for-php.png)](http://2.bp.blogspot.com/_nhKbx850xAI/TO83d44JeHI/AAAAAAAAORU/IyZ0wQ_h7jI/s1600/screenshot-testing-netbeans-ide-early-access-for-php.png)
