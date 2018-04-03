@@ -5,21 +5,14 @@ slug: arquivos
 <!--start: Container -->
 <div class="container">
     <div class="row">
-    {% for post in site.posts %}
-        <article class="col-md-4">
-			<div class="post-content" style="height: 25em; overflow: hidden">
-				<div class="post-title">
-					<h2><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-				</div>
-				<div class="post-meta">
-					<span><i class="fa fa-calendar"></i> {{ post.date | date: '%d/%m/%Y' }}</span>
-				</div>
-				<div class="post-description">
-					{{ post.excerpt | markdownify }}
-				</div>
-			</div>
-		</article>
-    {% endfor %}
+		<ul class="list-unstyled">
+		{% for post in site.posts %}
+			<li>
+				<span><i class="fa fa-calendar"></i> {{ post.date | date: '%d/%m/%Y' }}</span> - 
+				<a href="{{ post.url | prepend: site.baseurl }}" class="link-text">{{ post.title }}</a>
+			</li>
+		{% endfor %}
+		</ul>
     </div>
 </div>
 <!--end: Container-->

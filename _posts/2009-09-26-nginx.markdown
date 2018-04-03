@@ -166,7 +166,8 @@ parse_script_option_list $@
 ```
 
 Atribuímos permissão de execução e rodamos, pronto, suporte a PHP instalado. De quebra, já colocamos para iniciar logo após o boot.
-{% highlight console %}
+
+```
 $ chmod +x php-fcgi
 $ sudo mv php-fcgi /etc/init.d/
 $ sudo update-rc.d php-fcgi defaults

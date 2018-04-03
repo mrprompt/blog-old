@@ -73,11 +73,13 @@ Isso fará com que o componente P28n, que você criou anteriormente, seja utiliz
 
 Agora, com tudo instalado e funcionando, vamos testar, pegue algum arquivo da sua aplicação (em views ou mesmo em controllers), qualquer lugar que gere uma 
 mensagem de retorno para o usuário, vamos usar como exemplo a linha abaixo:
+
 ```
 echo  "Bem vindo";
 ```
 
 E trocamos para:
+
 ```
 echo __("Bem vindo");
 ```
@@ -90,7 +92,7 @@ $msg = __("Bem vindo", true);
 
 Feito isso para todas as mensagens da aplicação, vamos gerar o arquivo de tradução, na shell, crie os diretórios das linguagens:
 
-{% highlight console %}
+```
 $ cd aplicacao
 $ mkdir -p locale/pt_br/LC_MESSAGES
 $ mkdir -p locale/eng/LC_MESSAGES
@@ -98,13 +100,13 @@ $ mkdir -p locale/eng/LC_MESSAGES
 
 Diretórios criados, vamos gerar o arquivo com as strings a serem traduzidas:
 
-{% highlight console %}
+```
 $ cd aplicacao
 $ ../cake/console/cake extract -project aplicacao
 ```
 
 Então, ele irá fazer algumas perguntas, na sequência:
-{% highlight console %}
+```
 Hello thiago,
 
 Welcome to CakePHP v1.2.0.5427 alpha Console
@@ -124,7 +126,7 @@ Processing /var/www/aplicacao/app_controller.php......
 ```
 
 Pronto, foi criado um arquivo chamado "default.pot", no diretório locale que criamos, copie-o, para os diretório LC_MESSAGES do idioma, trocando a extensão de ".pot" para ".po"
-{% highlight console %}
+```
 $ cd aplicacao/locale
 $ cp default.pot pt_br/LC_MESSAGES/default.po
 $ cp default.pot eng/LC_MESSAGES/default.po
@@ -132,14 +134,14 @@ $ cp default.pot eng/LC_MESSAGES/default.po
 
 A estrutura do arquivo é bem simples, algo como:
 
-{% highlight console %}
+```
 #: /controllers/contato_controller.php:16;55
 msgid "Bem vindo"
 msgstr ""
 ```
 
 O processo de tradução, é simples, bastando inserir a tradução da mensagem em "msgid" em "msgstr",
-{% highlight console %}
+```
 #: /controllers/teste_controller.php:16;55 
 msgid "Bem vindo" 
 msgstr "Welcome"
