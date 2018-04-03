@@ -57,7 +57,7 @@ cgi.fix_pathinfo=1
 Rodando o PHP como daemon No nosso caso, vamos utilizar o PHP no modo CGI,como você viu, as requisições a scripts PHP são encaminhadas via proxy para um socket. 
 Cole o conteúdo abaixo em um aquivo vazio, vamos chamar de php-fcgi:
 
-{% highlight bash linenos %}
+```
 #!/bin/sh
 #
 # Author: Till Klampaeckel
