@@ -65,7 +65,20 @@ slug: index
 		<!-- /Blog Posts -->
 
 		<div class="col-md-3 sidebar">
-			{% google_cse %}
+			<div class="search">
+				<script>
+					(function () {
+						var cx = '{{ site.google_cse_id }}';
+						var gcse = document.createElement('script');
+						gcse.type = 'text/javascript';
+						gcse.async = true;
+						gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+						var s = document.getElementsByTagName('script')[0];
+						s.parentNode.insertBefore(gcse, s);
+					})();
+				</script>
+				<gcse:search></gcse:search>
+			</div>
 			<hr>
 			<ul class="list-unstyled">
 				{% for post in site.posts %}

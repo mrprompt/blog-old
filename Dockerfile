@@ -4,8 +4,6 @@ ENV HOME=/usr/src/app
 
 WORKDIR ${HOME}
 
-RUN gem install jekyll-google_cse
-
 COPY . ${HOME}
 
 EXPOSE 4000 80
