@@ -5,3 +5,12 @@
 body {
     padding-top: 70px;
 }
+
+.sidebar ul li {
+    margin-bottom: .5em; 
+    border-bottom: dotted 1px rgb(0, 0, 0);
+}
+
+.post-content {
+    border-bottom: dotted 1px rgba(0, 0, 0, 0.555);
+}

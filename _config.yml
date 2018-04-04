@@ -10,14 +10,18 @@ timezone: America/Sao_Paulo
 permalink: pretty
 
 # Pagination
-paginate: 10
+paginate: 5
 pagination_path: "/:num"
+
+# Use your search engine ID
+google_cse_id: "002596954644940765615:oyvb7cllqbi" 
 
 # Plugins
 gems:
   - jekyll-sitemap
   - jekyll-paginate
   - jekyll-redirect-from
+  - jekyll-google_cse
 
 sass:
   style: compressed
